@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding: 15px 30px 15px 30px;
+    background-color: #f3f4f6;
+    border-bottom: 1px solid #e5e7eb;
+    box-sizing: border-box;
+  }
+
+.headerLeftText {
+  color: #2f4f4f;
+  font-size: 24px;
+  font-family: "Kanit";
+  line-height: 28px;
+}
+  
+  
