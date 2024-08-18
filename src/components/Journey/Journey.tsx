@@ -5,7 +5,7 @@ import Timeline from "./Timeline";
 function Journey() {
   return (
     <div className={styles.journeyContainer}>
-      <text className={styles.journeyHeader}>myJourneyThusFar</text>
+      <p className={styles.journeyHeader}>myJourneyThusFar</p>
       <Timeline />
     </div>
   );

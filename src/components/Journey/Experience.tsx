@@ -18,11 +18,11 @@ function Experience({
 }: Props) {
   return (
     <div className={styles.experienceContainer}>
-      <text className={styles.experienceTitle}>{title}</text>
-      <text className={styles.experienceDescription}>{description}</text>
-      <text className={styles.experienceDateRange}>
+      <p className={styles.experienceTitle}>{title}</p>
+      <p className={styles.experienceDescription}>{description}</p>
+      <p className={styles.experienceDateRange}>
         {startDate} - {endDate}
-      </text>
+      </p>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import GoTos from "./GoTos";
 function AppBar() {
   return (
     <div className={styles.appBarContainer}>
-      <text className={styles.brandText}>heyItsKeith</text>
+      <p className={styles.brandText}>heyItsKeith</p>
       <GoTos />
     </div>
   );
