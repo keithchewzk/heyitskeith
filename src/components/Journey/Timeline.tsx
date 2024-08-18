@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { JOURNEY_ITEMS } from "./constants";
 import styles from "./Timeline.module.css";
 import Experience from "./Experience";
+import ExperienceIcon from "./ExperienceIcon";
 
 function Timeline() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1000);
@@ -35,7 +36,9 @@ function Timeline() {
               isPositionLeft={isPositionLeft}
               isSmallScreen={isSmallScreen}
             />
-            <div className={styles.verticalLine}></div>
+            <div className={styles.verticalLine}>
+              <ExperienceIcon path={item.iconPath} />
+            </div>
             {!isSmallScreen && <div className={styles.blankContainer}></div>}
           </div>
         );
