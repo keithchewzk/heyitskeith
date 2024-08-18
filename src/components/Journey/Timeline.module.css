@@ -16,6 +16,6 @@
   }
 
   .blankContainer {
-    width: 50%;
+    width: calc(50% - 1px);
     box-sizing: border-box;
   }
