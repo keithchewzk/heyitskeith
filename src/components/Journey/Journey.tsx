@@ -1,13 +1,12 @@
 import React from "react";
-import styles from "./Journey.module.css";
 import Timeline from "./Timeline";
+import Section from "../common/Section";
 
 function Journey() {
   return (
-    <div className={styles.journeyContainer}>
-      <p className={styles.journeyHeader}> &gt; what i've been up to</p>
+    <Section header="what ive been up to">
       <Timeline />
-    </div>
+    </Section>
   );
 }
 
