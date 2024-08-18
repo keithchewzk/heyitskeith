@@ -10,6 +10,7 @@ function Timeline() {
         const isPositionLeft = index % 2 === 0;
         return (
           <div
+            key={index}
             style={{ flexDirection: isPositionLeft ? "row" : "row-reverse" }}
             className={styles.timelineRow}
           >
