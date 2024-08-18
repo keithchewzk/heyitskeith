@@ -23,9 +23,22 @@ function Experience({
       style={{ width: isSmallScreen ? "100%" : "calc(50% - 1px)" }}
       className={styles.experienceContainer}
     >
-      <p className={styles.experienceTitle}>{title}</p>
-      <p className={styles.experienceDescription}>{description}</p>
-      <p className={styles.experienceDateRange}>
+      <p
+        style={{ textAlign: isPositionLeft ? "right" : "left" }}
+        className={styles.experienceTitle}
+      >
+        {title}
+      </p>
+      <p
+        style={{ textAlign: isPositionLeft ? "right" : "left" }}
+        className={styles.experienceDescription}
+      >
+        {description}
+      </p>
+      <p
+        style={{ textAlign: isPositionLeft ? "right" : "left" }}
+        className={styles.experienceDateRange}
+      >
         {startDate} - {endDate}
       </p>
     </div>

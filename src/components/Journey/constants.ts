@@ -6,7 +6,7 @@ export const JOURNEY_ITEMS = [
     startDate: "Jan 2018",
     endDate: "Dec 2010",
     iconPath:
-      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg",
+      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud-filled.svg",
   },
   {
     title: "Software Engineer at MSD",
@@ -15,7 +15,7 @@ export const JOURNEY_ITEMS = [
     startDate: "Jan 2018",
     endDate: "Dec 2010",
     iconPath:
-      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg",
+      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud-filled.svg",
   },
   {
     title: "Cloud Engineer at MSD",
@@ -24,7 +24,7 @@ export const JOURNEY_ITEMS = [
     startDate: "Jan 2018",
     endDate: "Dec 2010",
     iconPath:
-      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg",
+      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud-filled.svg",
   },
   {
     title: "Graduated from NUS",
@@ -33,6 +33,6 @@ export const JOURNEY_ITEMS = [
     startDate: "Jan 2018",
     endDate: "Dec 2010",
     iconPath:
-      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg",
+      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud-filled.svg",
   },
 ];
