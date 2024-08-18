@@ -8,11 +8,7 @@ interface Props {
 function ExperienceIcon({ path }: Props) {
   return (
     <div className={styles.experienceIconContainer}>
-      <img
-        src="https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg"
-        alt=""
-        className={styles.experienceIcon}
-      />
+      <img src={path} alt="" className={styles.experienceIcon} />
     </div>
   );
 }

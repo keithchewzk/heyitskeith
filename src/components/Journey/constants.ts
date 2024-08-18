@@ -5,7 +5,8 @@ export const JOURNEY_ITEMS = [
       "Developed and maintained web applications, improving user experience and performance.",
     startDate: "Jan 2018",
     endDate: "Dec 2010",
-    iconPath: "/public/icons/cloud.svg",
+    iconPath:
+      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg",
   },
   {
     title: "Software Engineer at MSD",
@@ -13,7 +14,8 @@ export const JOURNEY_ITEMS = [
       "Developed and maintained web applications, improving user experience and performance.",
     startDate: "Jan 2018",
     endDate: "Dec 2010",
-    iconPath: "/public/icons/cloud.svg",
+    iconPath:
+      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg",
   },
   {
     title: "Cloud Engineer at MSD",
@@ -21,7 +23,8 @@ export const JOURNEY_ITEMS = [
       "Developed and maintained web applications, improving user experience and performance.",
     startDate: "Jan 2018",
     endDate: "Dec 2010",
-    iconPath: "/public/icons/cloud.svg",
+    iconPath:
+      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg",
   },
   {
     title: "Graduated from NUS",
@@ -29,6 +32,7 @@ export const JOURNEY_ITEMS = [
       "Developed and maintained web applications, improving user experience and performance.",
     startDate: "Jan 2018",
     endDate: "Dec 2010",
-    iconPath: "/public/icons/cloud.svg",
+    iconPath:
+      "https://heyitskeith-assets.s3.ap-southeast-1.amazonaws.com/cloud.svg",
   },
 ];
