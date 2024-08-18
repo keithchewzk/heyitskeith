@@ -7,6 +7,7 @@ interface Props {
   startDate: string;
   endDate: string;
   isPositionLeft: boolean;
+  isSmallScreen: boolean;
 }
 
 function Experience({
@@ -15,9 +16,13 @@ function Experience({
   startDate,
   endDate,
   isPositionLeft,
+  isSmallScreen,
 }: Props) {
   return (
-    <div className={styles.experienceContainer}>
+    <div
+      style={{ width: isSmallScreen ? "100%" : "calc(50% - 1px)" }}
+      className={styles.experienceContainer}
+    >
       <p className={styles.experienceTitle}>{title}</p>
       <p className={styles.experienceDescription}>{description}</p>
       <p className={styles.experienceDateRange}>
