@@ -1,16 +1,28 @@
 import React from "react";
 import { JOURNEY_ITEMS } from "./constants";
 import styles from "./Timeline.module.css";
+import Experience from "./Experience";
 
 function Timeline() {
   return (
     <div className={styles.timelineContainer}>
-      {JOURNEY_ITEMS.map((item) => (
-        <div className={styles.timelineRow}>
-          <div className={styles.experienceContainer}>{item.title}</div>
-          <div className={styles.blankContainer}>e</div>
-        </div>
-      ))}
+      {JOURNEY_ITEMS.map((item, index) => {
+        const isPositionLeft = index % 2 == 0;
+        return (
+          <div
+            style={{ flexDirection: isPositionLeft ? "row" : "row-reverse" }}
+            className={styles.timelineRow}
+          >
+            <Experience
+              title={item.title}
+              description={item.description}
+              startDate={item.startDate}
+              endDate={item.endDate}
+            />
+            <div className={styles.blankContainer}></div>
+          </div>
+        );
+      })}
     </div>
   );
 }

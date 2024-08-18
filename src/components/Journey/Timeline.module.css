@@ -7,14 +7,10 @@
 
   .timelineRow {
     display: flex;
-    flex-direction: row;
     width: 100%;
-  }
-
-  .experienceContainer {
-    width: 50%;
   }
 
   .blankContainer {
     width: 50%;
+    box-sizing: border-box;
   }
