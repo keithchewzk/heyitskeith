@@ -10,6 +10,11 @@
     width: 100%;
   }
 
+  .verticalLine {
+    width: 2px;
+    background-color: #2f4f4f;
+  }
+
   .blankContainer {
     width: 50%;
     box-sizing: border-box;

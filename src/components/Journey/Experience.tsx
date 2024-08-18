@@ -6,9 +6,16 @@ interface Props {
   description: string;
   startDate: string;
   endDate: string;
+  isPositionLeft: boolean;
 }
 
-function Experience({ title, description, startDate, endDate }: Props) {
+function Experience({
+  title,
+  description,
+  startDate,
+  endDate,
+  isPositionLeft,
+}: Props) {
   return (
     <div className={styles.experienceContainer}>
       <text className={styles.experienceTitle}>{title}</text>

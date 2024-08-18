@@ -7,7 +7,7 @@ function Timeline() {
   return (
     <div className={styles.timelineContainer}>
       {JOURNEY_ITEMS.map((item, index) => {
-        const isPositionLeft = index % 2 == 0;
+        const isPositionLeft = index % 2 === 0;
         return (
           <div
             style={{ flexDirection: isPositionLeft ? "row" : "row-reverse" }}
@@ -18,7 +18,9 @@ function Timeline() {
               description={item.description}
               startDate={item.startDate}
               endDate={item.endDate}
+              isPositionLeft={isPositionLeft}
             />
+            <div className={styles.verticalLine}></div>
             <div className={styles.blankContainer}></div>
           </div>
         );
