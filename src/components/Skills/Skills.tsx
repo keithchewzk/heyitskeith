@@ -1,8 +1,12 @@
 import React from "react";
-import styles from "./Skills.module.css";
+import Section from "../common/Section";
 
 function Skills() {
-  return <div className={styles.journeyContainer}></div>;
+  return (
+    <Section header="what i've learnt">
+      <div>hi</div>
+    </Section>
+  );
 }
 
 export default Skills;
