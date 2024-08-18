@@ -1,0 +1,21 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 175px 0 175px 0;
+}
+
+.heroTitle {
+  color: #2f4f4f;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 76px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heroSubtitle {
+  color: #2f4f4f;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
