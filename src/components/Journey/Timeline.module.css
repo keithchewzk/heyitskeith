@@ -12,6 +12,8 @@
 
   .verticalLine {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 2px;
     background-color: #2f4f4f;
