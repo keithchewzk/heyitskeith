@@ -1,0 +1,13 @@
+.skillsContainer {
+    padding-left: 80px;
+}
+
+.skillContainer {
+    display: inline-block;
+    padding: 30px;
+    width: 200px;
+}
+
+.skillText {
+    font-size: x-large;
+}
