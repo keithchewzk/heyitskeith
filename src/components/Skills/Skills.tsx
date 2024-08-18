@@ -1,11 +1,16 @@
 import React from "react";
 import Section from "../common/Section";
-import { SKILLS } from "./constants";
+import { CATEGORIES, SKILLS } from "./constants";
 import styles from "./Skills.module.css";
 
 function Skills() {
   return (
     <Section header="what i've learnt">
+      <div className={styles.categoriesContainer}>
+        {CATEGORIES.map((item) => {
+          return <button className={styles.categoryButton}>{item}</button>;
+        })}
+      </div>
       <div className={styles.skillsContainer}>
         {SKILLS.map((item) => {
           return (
