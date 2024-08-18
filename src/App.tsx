@@ -1,10 +1,14 @@
 import "./App.css";
-import Header from "./components/Header/Header";
+import AppBar from "./components/AppBar/AppBar";
+import Hero from "./components/Hero/Hero";
+import Journey from "./components/Journey/Journey";
 
 function App() {
   return (
     <div>
-      <Header />
+      <AppBar />
+      <Hero />
+      <Journey />
     </div>
   );
 }
