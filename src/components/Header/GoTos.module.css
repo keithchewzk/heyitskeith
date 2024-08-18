@@ -1,0 +1,8 @@
+.goTosContainer {
+    display: flex;
+    align-items: center;
+  }
+
+.goToText {
+  margin-left: 20px;
+}
