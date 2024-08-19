@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Section from "../common/Section";
 import { useState } from "react";
 import { CATEGORIES, SKILLS } from "./constants";
 import styles from "./Skills.module.css";
-import { getSkills } from "./getSkills";
+
+interface Skill {
+  skill: string;
+  category: string;
+}
 
 function Skills() {
+  const [skills, setSkills] = useState([]);
   const [category, setCategory] = useState("all");
+
+  useEffect(() => {
+    fetch("https://ylzmzy60td.execute-api.ap-southeast-1.amazonaws.com/prod")
+      .then((response) => response.json())
+      .then((json) => setSkills(json.Items))
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <Section header="Skills">
       <div className={styles.categoriesContainer}>
@@ -24,7 +37,7 @@ function Skills() {
         })}
       </div>
       <div className={styles.skillsContainer}>
-        {SKILLS.map((item) => {
+        {skills.map((item: Skill) => {
           return (
             <div key={item.skill} className={styles.skillContainer}>
               <span
