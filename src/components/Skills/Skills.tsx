@@ -13,6 +13,7 @@ function Skills() {
         {CATEGORIES.map((item) => {
           return (
             <button
+              key={item}
               onMouseEnter={() => setCategory(item)}
               onMouseLeave={() => setCategory("all")}
               className={styles.categoryButton}
