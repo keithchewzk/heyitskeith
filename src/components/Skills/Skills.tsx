@@ -3,10 +3,10 @@ import Section from "../common/Section";
 import { useState } from "react";
 import { CATEGORIES, SKILLS } from "./constants";
 import styles from "./Skills.module.css";
+import { getSkills } from "./getSkills";
 
 function Skills() {
   const [category, setCategory] = useState("all");
-  console.log(category);
   return (
     <Section header="Skills">
       <div className={styles.categoriesContainer}>
@@ -29,7 +29,7 @@ function Skills() {
               <span
                 style={{
                   opacity:
-                    item.category == category || category == "all" ? 1 : 0.05,
+                    item.category === category || category === "all" ? 1 : 0.05,
                 }}
                 className={styles.skillText}
               >
