@@ -1,4 +1,4 @@
-export const CATEGORIES = ["languages", "concepts", "tools", "frameworks"];
+export const CATEGORIES = ["languages", "domains", "tools", "frameworks"];
 
 export const SKILLS = [
   { skill: "Python", category: "languages" },
