@@ -9,7 +9,7 @@ interface Props {
 function Section({ children, header }: Props) {
   return (
     <div className={styles.sectionContainer}>
-      <div className={styles.sectionHeader}> &gt; {header}</div>
+      <h2 className={styles.sectionHeader}> &gt; {header}</h2>
       {children}
     </div>
   );
