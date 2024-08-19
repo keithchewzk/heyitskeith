@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Section from "../common/Section";
 import { useState } from "react";
-import { CATEGORIES, SKILLS } from "./constants";
+import { CATEGORIES } from "./constants";
 import styles from "./Skills.module.css";
 
 interface Skill {
@@ -10,20 +10,22 @@ interface Skill {
 }
 
 function Skills() {
-  const [skills, setSkills] = useState([]);
+  // const [categories, setCategories] = useState<string[]>([]);
+  const [skills, setSkills] = useState<Skill[]>([]);
   const [category, setCategory] = useState("all");
 
   useEffect(() => {
     fetch("https://ylzmzy60td.execute-api.ap-southeast-1.amazonaws.com/prod")
       .then((response) => response.json())
       .then((json) => setSkills(json.Items))
+      // .then(() => setCategories(skills.map((skill) => skill.category)))
       .catch((error) => console.error(error));
   }, []);
 
   return (
     <Section header="Skills">
       <div className={styles.categoriesContainer}>
-        {CATEGORIES.map((item) => {
+        {CATEGORIES.map((item: string) => {
           return (
             <button
               key={item}
