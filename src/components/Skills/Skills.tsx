@@ -5,7 +5,7 @@ import styles from "./Skills.module.css";
 
 function Skills() {
   return (
-    <Section header="what i've learnt">
+    <Section header="Skills">
       <div className={styles.categoriesContainer}>
         {CATEGORIES.map((item) => {
           return <button className={styles.categoryButton}>{item}</button>;

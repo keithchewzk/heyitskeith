@@ -4,7 +4,7 @@ import Section from "../common/Section";
 
 function Journey() {
   return (
-    <Section header="what ive been up to">
+    <Section header="Experiences">
       <Timeline />
     </Section>
   );
