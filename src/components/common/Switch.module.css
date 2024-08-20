@@ -5,6 +5,7 @@
   border: 1px #ddd solid;
   position: relative;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .switchBackgroundOn {
@@ -21,6 +22,7 @@
   width: 30px;
   position: absolute;
   top: 3px;
+  transition: 0.3s;
 }
 
 .switchOn {
