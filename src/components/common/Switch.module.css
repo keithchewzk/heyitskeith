@@ -1,0 +1,34 @@
+.switchBackground {
+  width: 72px;
+  height: 36px;
+  border-radius: 30px;
+  border: 1px #ddd solid;
+  position: relative;
+  cursor: pointer;
+}
+
+.switchBackgroundOn {
+  background-color: blue;
+}
+
+.switchBackgroundOff {
+  background-color: aliceblue;
+}
+
+.switch {
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 3px;
+}
+
+.switchOn {
+  background-color: white;
+  left: 39px;
+}
+
+.switchOff {
+  background-color: blue;
+  left: 3px;
+}
