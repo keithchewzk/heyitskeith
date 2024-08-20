@@ -4,12 +4,18 @@ import GoTos from "./GoTos";
 import Switch from "../common/Switch";
 
 function AppBar() {
-  const [switchOn, setSwitchOn] = useState();
+  const [switchOn, setSwitchOn] = useState(false);
+
   return (
     <div className={styles.appBarContainer}>
       <p className={styles.brandText}>heyItsKeith</p>
       <GoTos />
-      <Switch value={false} onClick={() => {}} />
+      <Switch
+        value={switchOn}
+        onClick={() => {
+          setSwitchOn(!switchOn);
+        }}
+      />
     </div>
   );
 }
