@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="app" data-theme={isDark ? "dark" : "light"}>
-      <AppBar />
+      <AppBar isDark={isDark} setIsDark={setIsDark} />
       <Hero />
       <Journey />
       <Skills />

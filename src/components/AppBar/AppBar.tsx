@@ -1,21 +1,36 @@
 import React, { useState } from "react";
 import styles from "./AppBar.module.css";
 import GoTos from "./GoTos";
-import Switch from "../common/Switch";
 
-function AppBar() {
-  const [switchOn, setSwitchOn] = useState(false);
+interface Props {
+  isDark: boolean;
+  setIsDark: Function;
+}
 
+function AppBar({ isDark, setIsDark }: Props) {
   return (
     <div className={styles.appBarContainer}>
+      {/* Personal brand icon */}
       <p className={styles.brandText}>heyItsKeith</p>
+
+      {/* Go To buttons */}
       <GoTos />
-      <Switch
-        value={switchOn}
+
+      {/* Dark theme switch */}
+      <div
+        className={`${styles.switchBackground} ${
+          isDark ? styles.switchBackgroundOn : styles.switchBackgroundOff
+        }`}
         onClick={() => {
-          setSwitchOn(!switchOn);
+          setIsDark(!isDark);
         }}
-      />
+      >
+        <div
+          className={`${styles.switch} ${
+            isDark ? styles.switchOn : styles.switchOff
+          }`}
+        ></div>
+      </div>
     </div>
   );
 }
