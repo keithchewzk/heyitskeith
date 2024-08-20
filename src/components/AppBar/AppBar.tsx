@@ -18,9 +18,7 @@ function AppBar({ isDark, setIsDark }: Props) {
 
       {/* Dark theme switch */}
       <div
-        className={`${styles.switchBackground} ${
-          isDark ? styles.switchBackgroundOn : styles.switchBackgroundOff
-        }`}
+        className={styles.switchBackground}
         onClick={() => {
           setIsDark(!isDark);
         }}
