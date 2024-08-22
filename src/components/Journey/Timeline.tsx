@@ -21,6 +21,7 @@ function Timeline() {
       {JOURNEY_ITEMS.map((item, index) => {
         const isPositionLeft = index % 2 === 0 && !isSmallScreen;
         return (
+          // Each Experience forms a row in the timeline
           <div
             key={index}
             style={{
@@ -28,6 +29,7 @@ function Timeline() {
             }}
             className={styles.timelineRow}
           >
+            {/* Experience component */}
             <Experience
               title={item.title}
               description={item.description}
@@ -36,10 +38,17 @@ function Timeline() {
               isPositionLeft={isPositionLeft}
               isSmallScreen={isSmallScreen}
             />
-            <div className={styles.verticalLine}>
+            {/* Line with icon in the middle */}
+            <div
+              style={{
+                ...(index === JOURNEY_ITEMS.length - 1 && {
+                  backgroundColor: "transparent",
+                }),
+              }}
+              className={styles.verticalLine}
+            >
               <ExperienceIcon path={item.iconPath} />
             </div>
-            {!isSmallScreen && <div className={styles.blankContainer}></div>}
           </div>
         );
       })}
