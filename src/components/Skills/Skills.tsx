@@ -15,7 +15,9 @@ function Skills() {
   const [category, setCategory] = useState("all");
 
   useEffect(() => {
-    fetch("https://ylzmzy60td.execute-api.ap-southeast-1.amazonaws.com/prod")
+    fetch(
+      "https://ylzmzy60td.execute-api.ap-southeast-1.amazonaws.com/prod/skills"
+    )
       .then((response) => response.json())
       .then((json) => setSkills(json.Items))
       // .then(() => setCategories(skills.map((skill) => skill.category)))
