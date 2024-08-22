@@ -16,7 +16,7 @@ function Skills() {
 
   useEffect(() => {
     fetch(
-      "https://ylzmzy60td.execute-api.ap-southeast-1.amazonaws.com/prod/skills"
+      "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/skills"
     )
       .then((response) => response.json())
       .then((json) => setSkills(json.Items))
