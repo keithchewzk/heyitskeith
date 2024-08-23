@@ -1,0 +1,25 @@
+.chatContainer {
+  border: 2px white solid;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 50px 100px 50px 100px ;
+}
+
+.chatInputContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 2px white solid;
+  border-radius: 40px;
+  height: 40px;
+  padding: 7px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px white solid;
+  padding: 9px;
+  border-radius: 100%;
+}
