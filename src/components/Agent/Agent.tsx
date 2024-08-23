@@ -1,11 +1,22 @@
 import React from "react";
-import OpenAI from "openai";
 
 function Agent() {
   return (
     <button
       onClick={() => {
-        console.log("hello");
+        fetch(
+          "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/agent",
+          {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              userPrompt: "Why should I hire Keith?",
+            }),
+          }
+        );
       }}
     >
       Consult
