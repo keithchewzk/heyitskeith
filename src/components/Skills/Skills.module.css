@@ -23,6 +23,7 @@
 } 
 
 .skillText {
+    color: var(--app-large-text-color);
     font-size: x-large;
     animation: fadeIn 0.1s;
 }
