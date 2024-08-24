@@ -4,7 +4,7 @@ import AppBar from "./components/AppBar/AppBar";
 import Hero from "./components/Hero/Hero";
 import Journey from "./components/Journey/Journey";
 import Skills from "./components/Skills/Skills";
-import Agent from "./components/Agent/Agent";
+import Interview from "./components/Interview/Interview";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <Journey />
       <Skills />
-      <Agent />
+      <Interview />
     </div>
   );
 }

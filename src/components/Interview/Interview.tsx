@@ -1,9 +1,9 @@
 import React from "react";
 import Section from "../common/Section";
-import styles from "./Agent.module.css";
+import styles from "./Interview.module.css";
 // import { ReactComponent as ArrowUp } from "public/icons/arrowUp.svg";
 
-function Agent() {
+function Interview() {
   return (
     // <button
     //   onClick={() => {
@@ -41,4 +41,4 @@ function Agent() {
   );
 }
 
-export default Agent;
+export default Interview;
