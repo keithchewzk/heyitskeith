@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Section from "../common/Section";
 import styles from "./Interview.module.css";
-// import { ReactComponent as ArrowUp } from "public/icons/arrowUp.svg";
+import Conversation from "./Conversation";
+interface Message {
+  assistant?: string;
+  user?: string;
+}
 
 function Interview() {
+  const [conversation, setConversation] = useState<Message[]>([
+    { assistant: "Interview me!" },
+    { user: "Tell me why you are fit for this job" },
+  ]);
+
+  function addToConversation(message: Message) {
+    setConversation((conversation) => [...conversation, message]);
+  }
+
   return (
     // <button
     //   onClick={() => {
@@ -24,8 +37,12 @@ function Interview() {
     // >
     //   Consult
     // </button>
-    <Section header="Chat with me">
+    <Section header="Interview me">
       <div className={styles.chatContainer}>
+        <Conversation
+          conversation={conversation}
+          addToConversation={addToConversation}
+        />
         <div className={styles.chatInputContainer}>
           <div>Input</div>
           <div className={styles.iconContainer}>
