@@ -42,7 +42,7 @@ function MessageInput({ addToConversation, isResponding }: Props) {
           <img
             style={{ width: "15px", height: "15px" }}
             src={require("./arrowUp.svg").default}
-            alt="mySvgImage"
+            alt="Arrow pointing upwads"
           />
         </button>
       </div>
