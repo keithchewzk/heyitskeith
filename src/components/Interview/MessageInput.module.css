@@ -1,17 +1,25 @@
 .messageInputContainer {
   display: flex;
   justify-content: space-between;
-  border: 2px white solid;
+  align-items: center;
+  background-color: var(--app-box-color);
   border-radius: 40px;
-  height: 40px;
-  padding: 7px;
+  padding: 10px;
+}
+
+.messageInput {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: var(--app-large-text-color);
+  font-size: medium;
 }
 
 .iconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px white solid;
+  background-color: var(--app-large-text-color);
   padding: 9px;
   border-radius: 100%;
 }

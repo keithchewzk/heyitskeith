@@ -16,6 +16,7 @@ function Interview() {
 
   function addToConversation(message: Message) {
     setConversation((conversation) => [...conversation, message]);
+    console.log(conversation);
   }
 
   return (
@@ -44,7 +45,7 @@ function Interview() {
           conversation={conversation}
           addToConversation={addToConversation}
         />
-        <MessageInput />
+        <MessageInput addToConversation={addToConversation} />
       </div>
     </Section>
   );
