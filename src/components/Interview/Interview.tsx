@@ -32,8 +32,8 @@ function Interview() {
         if (responseData.statusCode === 200) {
           addToConversation({ assistant: responseData.assistantResponse });
         }
-        setIsResponding(false);
       });
+    setIsResponding(false);
   }
 
   function addToConversation(message: Message) {
