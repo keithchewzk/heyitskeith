@@ -6,16 +6,19 @@ interface Props {
 
 function MessageInput({ addToConversation }: Props) {
   const [userInput, setUserInput] = useState("");
+  const [submittable, setSubmittable] = useState(false);
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const message = { user: userInput };
     addToConversation(message);
     setUserInput("");
+    setSubmittable(false);
   };
 
   return (
-    <div className={styles.messageInputContainer}>
-      <form style={{ width: "100%" }} onSubmit={handleSubmit}>
+    <form id="messageForm" style={{ width: "100%" }} onSubmit={handleSubmit}>
+      <div className={styles.messageInputContainer}>
         <input
           className={styles.messageInput}
           name="userMessange"
@@ -23,20 +26,25 @@ function MessageInput({ addToConversation }: Props) {
           placeholder="Interview me, fire away!"
           value={userInput}
           onChange={(e) => {
-            setUserInput(e.target.value);
+            const currentInput = e.target.value;
+            setUserInput(currentInput);
+            setSubmittable(currentInput === "" ? false : true);
           }}
         />
-        <input type="submit" style={{ display: "none" }} />
-      </form>
-
-      <div className={styles.iconContainer}>
-        <img
-          style={{ width: "15px", height: "15px" }}
-          src={require("./arrowUp.svg").default}
-          alt="mySvgImage"
-        />
+        <button
+          form="messageForm"
+          type="submit"
+          className={styles.iconButton}
+          disabled={!submittable}
+        >
+          <img
+            style={{ width: "15px", height: "15px" }}
+            src={require("./arrowUp.svg").default}
+            alt="mySvgImage"
+          />
+        </button>
       </div>
-    </div>
+    </form>
   );
 }
 
