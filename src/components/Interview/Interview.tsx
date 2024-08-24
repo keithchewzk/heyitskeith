@@ -9,36 +9,38 @@ interface Message {
 }
 
 function Interview() {
-  const [conversation, setConversation] = useState<Message[]>([
-    { assistant: "Interview me!" },
-    { user: "Tell me why you are fit for this job" },
-  ]);
+  const [conversation, setConversation] = useState<Message[]>([]);
+
+  function callGptApi(userPrompt: string) {
+    fetch(
+      "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/agent",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userPrompt: userPrompt,
+        }),
+      }
+    )
+      .then((response) => response.json())
+      .then((responseData) => {
+        if (responseData.statusCode === 200) {
+          addToConversation({ assistant: responseData.assistantResponse });
+        }
+      });
+  }
 
   function addToConversation(message: Message) {
     setConversation((conversation) => [...conversation, message]);
-    console.log(conversation);
+    if (message.user) {
+      callGptApi(message.user);
+    }
   }
 
   return (
-    // <button
-    //   onClick={() => {
-    //     fetch(
-    //       "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/agent",
-    //       {
-    //         method: "POST",
-    //         headers: {
-    //           Accept: "application/json",
-    //           "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify({
-    //           userPrompt: "Why should I hire Keith?",
-    //         }),
-    //       }
-    //     );
-    //   }}
-    // >
-    //   Consult
-    // </button>
     <Section header="Interview me">
       <div className={styles.chatContainer}>
         <Conversation
