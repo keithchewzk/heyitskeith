@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Section from "../common/Section";
 import styles from "./Interview.module.css";
 import Conversation from "./Conversation";
+import MessageInput from "./MessageInput";
 interface Message {
   assistant?: string;
   user?: string;
@@ -43,16 +44,7 @@ function Interview() {
           conversation={conversation}
           addToConversation={addToConversation}
         />
-        <div className={styles.chatInputContainer}>
-          <div>Input</div>
-          <div className={styles.iconContainer}>
-            <img
-              style={{ width: "20px", height: "20px" }}
-              src={require("./arrowUp.svg").default}
-              alt="mySvgImage"
-            />
-          </div>
-        </div>
+        <MessageInput />
       </div>
     </Section>
   );
