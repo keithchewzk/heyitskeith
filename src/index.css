@@ -1,12 +1,16 @@
 :root {
   --app-background-color: #ffffff;
   --app-text-color: #191b1c;
+  --app-box-color: #ffffff;
+  --app-standout-color: #ff6347;
   
 }
 
 [data-theme="dark"] {
   --app-background-color: #191b1c;
-  --app-text-color: #ffffff
+  --app-text-color: #ffffff;
+  --app-box-color: #2f4f4f;
+  --app-standout-color: #ff6347;
 }
 
 body {
