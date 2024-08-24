@@ -15,7 +15,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 2px;
-    background-color: #ffffff;
+    background-color: var(--app-large-text-color);
   }
 
   .blankContainer {

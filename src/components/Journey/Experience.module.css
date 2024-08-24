@@ -6,12 +6,13 @@
 }
 
 .experienceTitle {
+  color: var(--app-large-text-color);
   font-size: 24px;
   margin: 5px 0 10px 0;
 }
 
 .experienceDescription {
-  color: #c0c0c0;
+  color: var(--app-small-text-color);
   font-size: 18px;
   font-weight: 300;
   line-height: 21px;
@@ -19,7 +20,7 @@
 }
 
 .experienceDateRange {
-  color: #c0c0c0;
+  color: var(--app-small-text-color);
   font-size: 18px;
   font-weight: 300;
   line-height: 21px;

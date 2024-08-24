@@ -4,6 +4,7 @@
 }
 
 .sectionHeader {
+    color: var(--app-large-text-color);
     font-size: 40px;
     font-weight: 500;
     margin-bottom: 100px;

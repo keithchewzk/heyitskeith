@@ -1,11 +1,11 @@
 .experienceIconContainer {
   display: flex;
-  padding: 10px;
-  border: 2px solid #ffffff;
+  padding: 12px;
   border-radius: 100%;
-  background-color: #f3f4f6;
+  background-color: var(--app-large-text-color);
 }
 
 .experienceIcon {
+  fill: var(--app-large-text-color);
   width: 22px;
 }

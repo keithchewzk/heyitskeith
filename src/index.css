@@ -1,6 +1,7 @@
 :root {
   --app-background-color: #ffffff;
-  --app-text-color: #191b1c;
+  --app-large-text-color: #2f4f4f;
+  --app-small-text-color: #696969;
   --app-box-color: #ffffff;
   --app-standout-color: #ff6347;
   
@@ -8,7 +9,8 @@
 
 [data-theme="dark"] {
   --app-background-color: #191b1c;
-  --app-text-color: #ffffff;
+  --app-large-text-color: #ffffff;
+  --app-small-text-color: #c0c0c0;
   --app-box-color: #2f4f4f;
   --app-standout-color: #ff6347;
 }
