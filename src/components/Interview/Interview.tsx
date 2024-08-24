@@ -10,9 +10,11 @@ interface Message {
 
 function Interview() {
   const [conversation, setConversation] = useState<Message[]>([]);
+  const [isResponding, setIsResponding] = useState(false);
 
-  function callGptApi(userPrompt: string) {
-    fetch(
+  async function callGptApi(userPrompt: string) {
+    setIsResponding(true);
+    await fetch(
       "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/agent",
       {
         method: "POST",
@@ -30,6 +32,7 @@ function Interview() {
         if (responseData.statusCode === 200) {
           addToConversation({ assistant: responseData.assistantResponse });
         }
+        setIsResponding(false);
       });
   }
 
@@ -47,7 +50,10 @@ function Interview() {
           conversation={conversation}
           addToConversation={addToConversation}
         />
-        <MessageInput addToConversation={addToConversation} />
+        <MessageInput
+          addToConversation={addToConversation}
+          isResponding={isResponding}
+        />
       </div>
     </Section>
   );

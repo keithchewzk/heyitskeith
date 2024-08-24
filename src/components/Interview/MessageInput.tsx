@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import styles from "./MessageInput.module.css";
 interface Props {
   addToConversation: Function;
+  isResponding: boolean;
 }
 
-function MessageInput({ addToConversation }: Props) {
+function MessageInput({ addToConversation, isResponding }: Props) {
   const [userInput, setUserInput] = useState("");
   const [submittable, setSubmittable] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log(isResponding);
     const message = { user: userInput };
     addToConversation(message);
     setUserInput("");
@@ -28,7 +30,7 @@ function MessageInput({ addToConversation }: Props) {
           onChange={(e) => {
             const currentInput = e.target.value;
             setUserInput(currentInput);
-            setSubmittable(currentInput === "" ? false : true);
+            setSubmittable(currentInput !== "" && !isResponding ? true : false);
           }}
         />
         <button

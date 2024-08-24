@@ -2,7 +2,8 @@
   --app-background-color: #ffffff;
   --app-large-text-color: #2f4f4f;
   --app-small-text-color: #696969;
-  --app-box-color: #ffffff;
+  --app-box-color-light: #f4f4f4;
+  --app-box-color-dark: #d7d7d7;
   --app-standout-color: #ff6347;
   
 }
@@ -11,7 +12,8 @@
   --app-background-color: #191b1c;
   --app-large-text-color: #ffffff;
   --app-small-text-color: #c0c0c0;
-  --app-box-color: #2f4f4f;
+  --app-box-color-light: #2f4f4f;
+  --app-box-color-dark: #d7d7d7;
   --app-standout-color: #ff6347;
 }
 

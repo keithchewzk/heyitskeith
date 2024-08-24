@@ -1,5 +1,6 @@
 .conversationContainer {
   height: 700px;
+  overflow-y: auto;
 }
 
 .messageRowLeft {
@@ -17,7 +18,7 @@
 }
 
 .messageContainer {
-  background-color: var(--app-box-color);
+  background-color: var(--app-box-color-light);
   padding: 10px;
   border-radius: 10px;
 }
