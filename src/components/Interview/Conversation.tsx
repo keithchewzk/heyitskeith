@@ -16,7 +16,7 @@ function Conversation({ conversation }: Props) {
       {conversation.length === 0 ? (
         <div className={styles.iconContainer}>
           <img
-            className={styles.icon}
+            className={styles.iconLarge}
             src={require("./headshot.svg").default}
             alt="Arrow pointing upwads"
           />
@@ -35,7 +35,20 @@ function Conversation({ conversation }: Props) {
                     : styles.messageRowLeft
                 }
               >
-                <div className={styles.messageContainer}>
+                {role === "assistant" && (
+                  <img
+                    className={styles.iconSmall}
+                    src={require("./headshot.svg").default}
+                    alt="Arrow pointing upwads"
+                  />
+                )}
+                <div
+                  className={
+                    role === "user"
+                      ? styles.messageContainerRight
+                      : styles.messageContainerLeft
+                  }
+                >
                   <span className={styles.message}>{message}</span>
                 </div>
               </div>

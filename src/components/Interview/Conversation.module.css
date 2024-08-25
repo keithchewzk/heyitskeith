@@ -11,9 +11,15 @@
   height: 100%;
 }
 
-.icon {
+.iconLarge {
   height: 60px;
   width: 60px;
+}
+
+.iconSmall {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
 }
 
 .messageRowLeft {
@@ -30,11 +36,18 @@
   margin-bottom: 50px;
 }
 
-.messageContainer {
-  background-color: var(--app-box-color-light);
-  padding: 10px;
-  border-radius: 10px;
+.messageContainerLeft {
+  margin-top: 10px;
 }
+
+.messageContainerRight {
+  background-color: var(--app-box-color-light);
+  padding: 15px;
+  border-radius: 30px;
+  max-width: 500px;
+}
+
+
 
 .message {
   color: var(--app-large-text-color);
