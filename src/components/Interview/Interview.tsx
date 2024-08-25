@@ -3,6 +3,7 @@ import Section from "../common/Section";
 import styles from "./Interview.module.css";
 import Conversation from "./Conversation";
 import MessageInput from "./MessageInput";
+import Suggestions from "./Suggestions";
 interface Message {
   assistant?: string;
   user?: string;
@@ -47,6 +48,7 @@ function Interview() {
     <Section header="Interview me">
       <div className={styles.chatContainer}>
         <Conversation conversation={conversation} />
+        <Suggestions addToConversation={addToConversation} />
         <MessageInput
           addToConversation={addToConversation}
           isResponding={isResponding}
