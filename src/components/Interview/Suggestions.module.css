@@ -25,9 +25,11 @@
 .suggestionHeader {
   text-align: start;
   font-weight: 600;
+  color: var(--app-large-text-color);
 }
 
 .suggestionSubheader {
   text-align: start;
   opacity: 0.5;
+  color: var(--app-large-text-color);
 }
