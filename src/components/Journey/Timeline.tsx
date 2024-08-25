@@ -3,7 +3,7 @@ import styles from "./Timeline.module.css";
 import Experience from "./Experience";
 import ExperienceIcon from "./ExperienceIcon";
 
-interface Experience {
+interface ExperienceProps {
   id: string;
   role: string;
   description: string;
@@ -13,7 +13,7 @@ interface Experience {
 
 function Timeline() {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1000);
-  const [experiences, setExperiences] = useState([]);
+  const [experiences, setExperiences] = useState<ExperienceProps[]>([]);
 
   const updateIsSmallScreen = () => {
     setIsSmallScreen(window.innerWidth < 1000);
