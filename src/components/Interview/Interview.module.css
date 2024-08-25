@@ -1,6 +1,6 @@
 .chatContainer {
   border: 2px white solid;
-  min-height: 500px;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   padding: 50px 100px 50px 100px ;

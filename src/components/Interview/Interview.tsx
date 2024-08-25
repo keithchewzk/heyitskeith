@@ -46,10 +46,7 @@ function Interview() {
   return (
     <Section header="Interview me">
       <div className={styles.chatContainer}>
-        <Conversation
-          conversation={conversation}
-          addToConversation={addToConversation}
-        />
+        <Conversation conversation={conversation} />
         <MessageInput
           addToConversation={addToConversation}
           isResponding={isResponding}
