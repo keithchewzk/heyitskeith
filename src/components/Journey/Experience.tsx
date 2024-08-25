@@ -2,19 +2,17 @@ import React from "react";
 import styles from "./Experience.module.css";
 
 interface Props {
-  title: string;
+  role: string;
   description: string;
-  startDate: string;
-  endDate: string;
+  dateRange: string;
   isPositionLeft: boolean;
   isSmallScreen: boolean;
 }
 
 function Experience({
-  title,
+  role,
   description,
-  startDate,
-  endDate,
+  dateRange,
   isPositionLeft,
   isSmallScreen,
 }: Props) {
@@ -27,7 +25,7 @@ function Experience({
         style={{ textAlign: isPositionLeft ? "right" : "left" }}
         className={styles.experienceTitle}
       >
-        {title}
+        {role}
       </p>
       <p
         style={{ textAlign: isPositionLeft ? "right" : "left" }}
@@ -39,7 +37,7 @@ function Experience({
         style={{ textAlign: isPositionLeft ? "right" : "left" }}
         className={styles.experienceDateRange}
       >
-        {startDate} - {endDate}
+        {dateRange}
       </p>
     </div>
   );
