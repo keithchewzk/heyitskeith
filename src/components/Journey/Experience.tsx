@@ -27,12 +27,7 @@ function Experience({
       >
         {role}
       </p>
-      <p
-        style={{ textAlign: isPositionLeft ? "right" : "left" }}
-        className={styles.experienceDescription}
-      >
-        {description}
-      </p>
+      <p className={styles.experienceDescription}>{description}</p>
       <p
         style={{ textAlign: isPositionLeft ? "right" : "left" }}
         className={styles.experienceDateRange}
