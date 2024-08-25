@@ -1,9 +1,10 @@
 .suggestionsContainer {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
   gap: 10px;
 }
+
 
 .suggestionsRow {
   display: flex;
@@ -32,4 +33,14 @@
   text-align: start;
   opacity: 0.5;
   color: var(--app-large-text-color);
+}
+
+@media only screen and (max-width: 1000px) {
+  .suggestionsRow{
+    flex-direction: column;
+  }
+
+  .suggestionButton{
+    width: 100%;
+  }
 }
