@@ -31,8 +31,8 @@ function Conversation({ conversation }: Props) {
                 key={index}
                 className={
                   role === "user"
-                    ? styles.messageRowLeft
-                    : styles.messageRowRight
+                    ? styles.messageRowRight
+                    : styles.messageRowLeft
                 }
               >
                 <div className={styles.messageContainer}>
