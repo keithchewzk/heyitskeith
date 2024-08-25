@@ -25,37 +25,33 @@ const suggestions = [
   },
 ];
 
-function handleClick(e: React.MouseEvent<HTMLElement>) {
-  e.preventDefault();
-}
-
 function Suggestions({ addToConversation }: Props) {
   return (
     <div className={styles.suggestionsContainer}>
       <div className={styles.suggestionsRow}>
-        {suggestions.slice(0, 2).map((suggestion) => {
+        {suggestions.slice(0, 2).map(({ header, subheader }) => {
           return (
-            <button onClick={handleClick} className={styles.suggestionButton}>
-              <span className={styles.suggestionHeader}>
-                {suggestion.header}
-              </span>
-              <span className={styles.suggestionSubheader}>
-                {suggestion.subheader}
-              </span>
+            <button
+              key={header}
+              onClick={() => addToConversation({ user: subheader })}
+              className={styles.suggestionButton}
+            >
+              <span className={styles.suggestionHeader}>{header}</span>
+              <span className={styles.suggestionSubheader}>{subheader}</span>
             </button>
           );
         })}
       </div>
       <div className={styles.suggestionsRow}>
-        {suggestions.slice(2, 4).map((suggestion) => {
+        {suggestions.slice(2, 4).map(({ header, subheader }) => {
           return (
-            <button onClick={handleClick} className={styles.suggestionButton}>
-              <span className={styles.suggestionHeader}>
-                {suggestion.header}
-              </span>
-              <span className={styles.suggestionSubheader}>
-                {suggestion.subheader}
-              </span>
+            <button
+              key={header}
+              onClick={() => addToConversation({ user: subheader })}
+              className={styles.suggestionButton}
+            >
+              <span className={styles.suggestionHeader}>{header}</span>
+              <span className={styles.suggestionSubheader}>{subheader}</span>
             </button>
           );
         })}
