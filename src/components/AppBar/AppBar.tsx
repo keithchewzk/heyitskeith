@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./AppBar.module.css";
 import GoTos from "./GoTos";
+import { ReactComponent as SunIcon } from "./assets/sun.svg";
+import { ReactComponent as MoonIcon } from "./assets/moon.svg";
+import { motion } from "framer-motion";
 
 interface Props {
   isDark: boolean;
@@ -17,18 +20,23 @@ function AppBar({ isDark, setIsDark }: Props) {
       <GoTos />
 
       {/* Dark theme switch */}
-      <div
-        className={styles.switchBackground}
-        onClick={() => {
-          setIsDark(!isDark);
-        }}
-      >
-        <div
-          className={`${styles.switch} ${
-            isDark ? styles.switchOn : styles.switchOff
-          }`}
-        ></div>
-      </div>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        {isDark ? (
+          <SunIcon
+            className={styles.icon}
+            onClick={() => {
+              setIsDark(!isDark);
+            }}
+          />
+        ) : (
+          <MoonIcon
+            className={styles.icon}
+            onClick={() => {
+              setIsDark(!isDark);
+            }}
+          />
+        )}
+      </motion.div>
     </div>
   );
 }
