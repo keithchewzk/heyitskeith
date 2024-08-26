@@ -19,7 +19,7 @@
 
 body {
   margin: 0;
-  font-family: 'JetBrainsMono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'League Spartan', 'JetBrainsMono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,14 +32,19 @@ code {
 }
 
 @font-face {
-  font-family: JetBrainsMono;
-  /* declare weights giving two values to specify a range */
+  font-family: 'League Spartan';
+  font-weight: 100 900;
+  src: url('/public/fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
   font-weight: 100 800;
   src: url('/public/fonts/JetBrainsMono-VariableFont_wght.ttf');
 }
 
 * {
-  font-family: JetBrainsMono;
+  font-family: 'League Spartan';
 }
 
 .w100 {
