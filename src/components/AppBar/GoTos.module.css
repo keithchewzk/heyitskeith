@@ -4,5 +4,9 @@
   }
 
 .goToText {
-  margin-left: 20px;
+  margin-left: 42px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--app-large-text-color);
+  cursor: pointer;
 }

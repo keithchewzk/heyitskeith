@@ -11,7 +11,7 @@ function AppBar({ isDark, setIsDark }: Props) {
   return (
     <div className={styles.appBarContainer}>
       {/* Personal brand icon */}
-      <p className={styles.brandText}>heyItsKeith</p>
+      <p className={styles.brandText}>Keith Chew</p>
 
       {/* Go To buttons */}
       <GoTos />
