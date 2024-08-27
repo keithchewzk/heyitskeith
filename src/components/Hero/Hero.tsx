@@ -3,9 +3,14 @@ import styles from "./Hero.module.css";
 
 function Hero() {
   return (
-    <div className={styles.heroContainer}>
-      <p className={styles.heroTitle}>Hi, I'm Keith</p>
-      <p className={styles.heroSubtitle}>Aspiring AI and Software Engineer</p>
+    <div className={styles.container}>
+      <span className={styles.header}>Keith Chew</span>
+      <span className={styles.subheader}>
+        Aspiring AI and Software Engineer
+      </span>
+      <span className={styles.description}>
+        I like to code, learn new technologies, and build software.
+      </span>
     </div>
   );
 }

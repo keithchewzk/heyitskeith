@@ -5,17 +5,25 @@ import Hero from "./components/Hero/Hero";
 import Journey from "./components/Journey/Journey";
 import Skills from "./components/Skills/Skills";
 import Interview from "./components/Interview/Interview";
+import About from "./components/About/About";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
 
   return (
     <div className="app" data-theme={isDark ? "dark" : "light"}>
-      <AppBar isDark={isDark} setIsDark={setIsDark} />
-      <Hero />
-      <Journey />
-      <Skills />
-      <Interview />
+      <div className="appBody">
+        <div className="appLeft">
+          {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
+          <Hero />
+        </div>
+        <div className="appRight">
+          <About />
+          <Journey />
+        </div>
+        {/* <Skills /> */}
+        {/* <Interview /> */}
+      </div>
     </div>
   );
 }

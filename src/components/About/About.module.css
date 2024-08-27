@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.paragraph {
+  color: var(--app-large-text-color);
+  font-size: 1.3rem;
+  font-weight: 400;
+  min-height: 20rem;
+}

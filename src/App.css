@@ -1,9 +1,28 @@
 .app {
     background-color: var(--app-background-color);
     transition: background-color 0.25s ease-in-out;
-    padding-bottom: 100px;
+}
+
+.appBody {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 65rem;
+    gap: 1rem;
     margin: auto;
-    max-width: 1000px
+    padding: 0 6rem 0 6rem;
+}
+
+.appLeft {
+    padding: 6rem 0 6rem 0;
+    width: 50%;
+    max-height: 100vh;
+    top: 0;
+    position: sticky;
+}
+
+.appRight {
+    margin-top: 6rem;
+    width: 50%;
 }
 
 p, h1, h2, h3, h4, h5, h6, span {
