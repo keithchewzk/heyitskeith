@@ -6,6 +6,7 @@ import Journey from "./components/Journey/Journey";
 import Skills from "./components/Skills/Skills";
 import Interview from "./components/Interview/Interview";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   const [isDark, setIsDark] = useState(true);
@@ -19,7 +20,8 @@ function App() {
         </div>
         <div className="appRight">
           <About />
-          <Journey />
+          <Experience />
+          {/* <Journey /> */}
         </div>
         {/* <Skills /> */}
         {/* <Interview /> */}

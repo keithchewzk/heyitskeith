@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.dateRange {
+  font-size: large;
+  color: var(--app-small-text-color);
+}
+
+.role {
+  font-size: x-large;
+  color: var(--app-large-text-color);
+  margin-top: 1rem;
+}
+
+.description {
+  font-size: large;
+  color: var(--app-small-text-color);
+  margin-top: 1rem;
+}

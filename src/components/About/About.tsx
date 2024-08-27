@@ -4,7 +4,7 @@ import styles from "./About.module.css";
 function About() {
   return (
     <div className={styles.container}>
-      <span className={styles.paragraph}>Hey there, my name is Keith.</span>
+      <p className={styles.paragraph}>Hey there, my name is Keith.</p>
     </div>
   );
 }
