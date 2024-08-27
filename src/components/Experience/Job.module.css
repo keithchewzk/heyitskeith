@@ -15,6 +15,12 @@
   margin-top: 1rem;
 }
 
+.company {
+  margin-top: 0.6rem;
+  font-size: x-large;
+  color: var(--app-small-text-color);
+}
+
 .description {
   font-size: large;
   color: var(--app-small-text-color);

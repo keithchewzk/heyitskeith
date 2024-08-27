@@ -7,7 +7,8 @@ interface JobProps {
   role: string;
   description: string;
   dateRange: string;
-  iconUrl: string;
+  skills: Array<string>;
+  company: string;
 }
 
 function Experience() {
@@ -23,13 +24,15 @@ function Experience() {
   }, []);
   return (
     <div className={styles.container}>
-      {jobs.map(({ id, role, description, dateRange }) => {
+      {jobs.map(({ id, role, description, dateRange, skills, company }) => {
         return (
           <Job
             key={id}
             role={role}
             description={description}
             dateRange={dateRange}
+            skills={skills}
+            company={company}
           />
         );
       })}
