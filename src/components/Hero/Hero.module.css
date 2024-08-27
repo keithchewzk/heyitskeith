@@ -17,6 +17,7 @@
 }
 
 .description {
+  color: var(--app-small-text-color);
   max-width: 20rem;
   margin-top: 2rem;
   font-size: 1.3rem;

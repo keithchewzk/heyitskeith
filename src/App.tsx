@@ -8,7 +8,7 @@ import Interview from "./components/Interview/Interview";
 import About from "./components/About/About";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   return (
     <div className="app" data-theme={isDark ? "dark" : "light"}>
