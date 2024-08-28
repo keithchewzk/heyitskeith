@@ -7,6 +7,7 @@ import Skills from "./components/Skills/Skills";
 import Interview from "./components/Interview/Interview";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
+import Navigator from "./components/Navigator/Navigator";
 
 function App() {
   const [isDark, setIsDark] = useState(true);
@@ -20,6 +21,7 @@ function App() {
         <div className="appLeft">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
           <Hero />
+          <Navigator />
         </div>
         <div className="appRight">
           <About />

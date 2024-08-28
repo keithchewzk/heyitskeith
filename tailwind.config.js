@@ -11,6 +11,7 @@ module.exports = {
         "button-primary": "var(--button-primary)",
         "button-secondary": "var(--button-secondary)",
         "border-primary": "var(--border-primary)",
+        "border-selected": "var(--border-selected)",
         "field-primary": "var(--field-primary)",
         "link-primary": "var(--link-primary)",
       },
