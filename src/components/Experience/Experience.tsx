@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Experience.module.css";
 import Job from "./Job";
 
 interface JobProps {
@@ -23,7 +22,7 @@ function Experience() {
       .catch((error) => console.error(error));
   }, []);
   return (
-    <div className={styles.container}>
+    <div>
       {jobs.map(({ id, role, description, dateRange, skills, company }) => {
         return (
           <Job

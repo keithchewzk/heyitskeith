@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Skills.module.css";
 
 interface Props {
   skills: Array<string>;
@@ -7,9 +6,13 @@ interface Props {
 
 function Skills({ skills }: Props) {
   return (
-    <div className={styles.container}>
+    <div>
       {skills.map((skill) => {
-        return <span className={styles.skill}>{skill}</span>;
+        return (
+          <span className="inline-block text-lg rounded-full bg-slate-800 px-4 py-1 mb-2 mr-4">
+            {skill}
+          </span>
+        );
       })}
     </div>
   );

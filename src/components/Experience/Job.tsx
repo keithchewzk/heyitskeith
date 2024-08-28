@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import styles from "./Job.module.css";
 import Skills from "./Skills";
 
 interface Props {
@@ -12,14 +11,12 @@ interface Props {
 
 function Job({ role, description, dateRange, skills, company }: Props) {
   return (
-    <div className={styles.container}>
-      <div>
-        <p className={styles.dateRange}>{dateRange}</p>
-        <p className={styles.role}>{role}</p>
-        <p className={styles.company}>{company}</p>
-        <p className={styles.description}>{description}</p>
-        <Skills skills={skills} />
-      </div>
+    <div className="mb-10">
+      <p className="text-lg">{dateRange}</p>
+      <p className="text-2xl">{role}</p>
+      <p className="text-2xl mb-2">{company}</p>
+      <p className="mb-5">{description}</p>
+      <Skills skills={skills} />
     </div>
   );
 }
