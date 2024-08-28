@@ -1,10 +1,11 @@
 import React from "react";
-import styles from "./About.module.css";
+import { aboutMeParaOne, aboutMeParaTwo } from "./constants";
 
 function About() {
   return (
-    <div className={styles.container}>
-      <p className={styles.paragraph}>Hey there, my name is Keith.</p>
+    <div className="mb-20">
+      <p className="mb-5">{aboutMeParaOne}</p>
+      <p className="">{aboutMeParaTwo}</p>
     </div>
   );
 }
