@@ -1,7 +1,7 @@
-.app {
+/* .app {
     background-color: var(--app-background-color);
     transition: background-color 0.25s ease-in-out;
-}
+} */
 
 .appBody {
     display: flex;
@@ -24,10 +24,3 @@
     margin-top: 6rem;
     width: 50%;
 }
-
-p, h1, h2, h3, h4, h5, h6, span {
-    color: var(--app-large-text-color);
-    margin: 0;
-    padding: 0;
-    line-height: 1.5rem;
-  }

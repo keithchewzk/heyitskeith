@@ -19,14 +19,21 @@
   --app-box-color-dark: #d7d7d7;
   --app-standout-color: #ff6347;
 
-  --background-primary: #0D1117;
-  --background-secondary: #161B22;
+  --background-primary: #161B22;
+  --background-secondary: #0D1117;
   --text-primary: #E6EDF3;
   --text-secondary: #8d96a0;
   --button-primary: #238636;
   --button-secondary: #21262D;
   --field-primary: #161B22;
   --link-primary: #4993F8;
+}
+
+p, h1, h2, h3, h4, h5, h6, span {
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
 }
 
 body {

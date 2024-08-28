@@ -12,7 +12,10 @@ function App() {
   const [isDark, setIsDark] = useState(true);
 
   return (
-    <div className="app" data-theme={isDark ? "dark" : "light"}>
+    <div
+      className="bg-background-primary"
+      data-theme={isDark ? "dark" : "light"}
+    >
       <div className="appBody">
         <div className="appLeft">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
