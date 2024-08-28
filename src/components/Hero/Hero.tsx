@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "./Hero.module.css";
 
 function Hero() {
   return (
-    <div className={styles.container}>
-      <p className={styles.header}>Keith Chew</p>
-      <p className={styles.subheader}>Aspiring AI and Software Engineer</p>
-      <p className={styles.description}>
+    <div>
+      <p className="text-6xl font-medium mb-2">Keith Chew</p>
+      <p className="text-2xl mb-4">Aspiring AI and Software Engineer</p>
+      <p className="text-lg">
         I like to code, learn new technologies, and build software.
       </p>
     </div>

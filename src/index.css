@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --app-background-color: #ffffff;
   --app-large-text-color: #2f4f4f;
