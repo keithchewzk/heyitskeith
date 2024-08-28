@@ -12,10 +12,12 @@ interface Props {
 function Job({ role, description, dateRange, skills, company }: Props) {
   return (
     <div className="mb-10">
-      <p className="text-lg">{dateRange}</p>
-      <p className="text-2xl">{role}</p>
-      <p className="text-2xl mb-2">{company}</p>
-      <p className="mb-5">{description}</p>
+      <p className="text-lg text-text-tertiary font-semibold mb-1">
+        {dateRange}
+      </p>
+      <p className="text-2xl font-medium">{role}</p>
+      <p className="text-xl mb-2">{company}</p>
+      <p className="text-md mb-5 text-text-secondary">{description}</p>
       <Skills skills={skills} />
     </div>
   );

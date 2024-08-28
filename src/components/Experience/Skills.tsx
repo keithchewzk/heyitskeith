@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-
 interface Props {
   skills: Array<string>;
 }
@@ -9,7 +7,7 @@ function Skills({ skills }: Props) {
     <div>
       {skills.map((skill) => {
         return (
-          <span className="inline-block text-lg rounded-full bg-slate-800 px-4 py-1 mb-2 mr-4">
+          <span className="inline-block text-md rounded-lg font-medium border border-solid border-border-primary bg-button-secondary text-text-secondary leading-6 px-3 pt-1 mb-3 mr-3">
             {skill}
           </span>
         );
