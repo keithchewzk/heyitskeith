@@ -17,13 +17,13 @@ function App() {
       className="bg-background-primary"
       data-theme={isDark ? "dark" : "light"}
     >
-      <div className="appBody">
-        <div className="appLeft">
+      <div className="flex max-w-5xl md:gap-20 m-auto px-10 flex-col md:flex-row">
+        <div className="w-full md:w-6/12 md:sticky top-0 pt-40 max-h-screen">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
           <Hero />
           <Navigator />
         </div>
-        <div className="appRight">
+        <div className="w-full md:w-6/12 py-40">
           <About />
           <Experience />
           {/* <Journey /> */}
