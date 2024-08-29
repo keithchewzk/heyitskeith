@@ -23,6 +23,7 @@ function Job({ role, description, dateRange, skills, company }: Props) {
           duration: 0.4,
         },
       }}
+      viewport={{ once: true }}
       className="mb-10"
     >
       <p className="text-lg text-text-tertiary font-semibold mb-1">
