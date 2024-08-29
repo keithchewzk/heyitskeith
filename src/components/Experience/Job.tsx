@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import Skills from "./Skills";
+import { motion } from "framer-motion";
 
 interface Props {
   role: string;
@@ -11,7 +11,20 @@ interface Props {
 
 function Job({ role, description, dateRange, skills, company }: Props) {
   return (
-    <div className="mb-10">
+    <motion.div
+      initial={{
+        x: 20,
+        opacity: 0,
+      }}
+      whileInView={{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.4,
+        },
+      }}
+      className="mb-10"
+    >
       <p className="text-lg text-text-tertiary font-semibold mb-1">
         {dateRange}
       </p>
@@ -19,7 +32,7 @@ function Job({ role, description, dateRange, skills, company }: Props) {
       <p className="text-xl mb-2">{company}</p>
       <p className="text-md mb-5 text-text-secondary">{description}</p>
       <Skills skills={skills} />
-    </div>
+    </motion.div>
   );
 }
 
