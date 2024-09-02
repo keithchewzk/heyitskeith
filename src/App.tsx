@@ -11,6 +11,7 @@ import Navigator from "./components/Navigator/Navigator";
 
 function App() {
   const [isDark, setIsDark] = useState(true);
+  const [selectedSection, setSelectedSection] = useState("About");
 
   return (
     <div
@@ -21,11 +22,19 @@ function App() {
         <div className="w-full md:w-6/12 md:sticky top-0 pt-40 max-h-screen">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
           <Hero />
-          <Navigator />
+          <Navigator
+            selectedSection={selectedSection}
+            setSelectedSection={setSelectedSection}
+          />
         </div>
         <div className="w-full md:w-6/12 py-40">
-          <About />
-          <Experience />
+          <div id="about">
+            <About />
+          </div>
+          <div id="experience">
+            <Experience />
+          </div>
+
           {/* <Journey /> */}
         </div>
         {/* <Skills /> */}

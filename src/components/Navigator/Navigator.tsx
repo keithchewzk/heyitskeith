@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-function Navigator() {
+interface Props {
+  selectedSection: string;
+  setSelectedSection: Function;
+}
+
+function Navigator({ selectedSection, setSelectedSection }: Props) {
   const sections = ["About", "Experience", "Interview me"];
-  const [selectedSection, setSelectedSection] = useState("About");
   const relativeDist =
     (sections.indexOf(selectedSection) * 100) / sections.length;
 
@@ -22,7 +26,7 @@ function Navigator() {
           return (
             <motion.div
               className="text-text-primary cursor-pointer text-lg font-medium p-0.5"
-              whileHover={{ x: 7 }}
+              whileHover={{ x: 5 }}
               onClick={() => {
                 setSelectedSection(section);
               }}
