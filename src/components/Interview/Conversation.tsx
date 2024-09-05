@@ -22,18 +22,16 @@ function Conversation({ conversation }: Props) {
           />
         </div>
       ) : (
-        <div>
+        <div className="flex flex-col gap-9">
           {conversation.map((messageItem: Message, index) => {
             const role = Object.keys(messageItem)[0];
             const message = Object.values(messageItem)[0];
             return (
               <div
                 key={index}
-                className={
-                  role === "user"
-                    ? styles.messageRowRight
-                    : styles.messageRowLeft
-                }
+                className={`flex flex-row ${
+                  role === "user" ? "justify-end pl-14" : "justify-start pr-14"
+                }`}
               >
                 {role === "assistant" && (
                   <img
@@ -45,8 +43,8 @@ function Conversation({ conversation }: Props) {
                 <div
                   className={
                     role === "user"
-                      ? styles.messageContainerRight
-                      : styles.messageContainerLeft
+                      ? "text-md rounded-lg bg-box-color px-3 py-2"
+                      : ""
                   }
                 >
                   <span className={styles.message}>{message}</span>

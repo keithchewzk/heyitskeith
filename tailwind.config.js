@@ -14,6 +14,7 @@ module.exports = {
         "border-selected": "var(--border-selected)",
         "field-primary": "var(--field-primary)",
         "link-primary": "var(--link-primary)",
+        "box-color": "var(--box-color)",
       },
     },
   },
