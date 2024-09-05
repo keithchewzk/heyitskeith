@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./Conversation.module.css";
 
 interface Message {
   assistant?: string;
@@ -12,11 +11,11 @@ interface Props {
 
 function Conversation({ conversation }: Props) {
   return (
-    <div className={styles.conversationContainer}>
+    <div className="min-h-80 overflow-y-auto">
       {conversation.length === 0 ? (
-        <div className={styles.iconContainer}>
+        <div className="flex justify-center items-center h-full">
           <img
-            className={styles.iconLarge}
+            className="h-16 w-16"
             src={require("./headshot.svg").default}
             alt="Arrow pointing upwads"
           />
@@ -35,7 +34,7 @@ function Conversation({ conversation }: Props) {
               >
                 {role === "assistant" && (
                   <img
-                    className={styles.iconSmall}
+                    className="h-10 w-10 pr-3"
                     src={require("./headshot.svg").default}
                     alt="Arrow pointing upwads"
                   />
@@ -44,7 +43,7 @@ function Conversation({ conversation }: Props) {
                   className={
                     role === "user"
                       ? "text-md rounded-lg bg-box-color px-3 py-2"
-                      : ""
+                      : "flex flex-col justify-center"
                   }
                 >
                   <span className={styles.message}>{message}</span>
