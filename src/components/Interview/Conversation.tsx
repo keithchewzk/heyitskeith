@@ -46,7 +46,7 @@ function Conversation({ conversation }: Props) {
                       : "flex flex-col justify-center"
                   }
                 >
-                  <span className={styles.message}>{message}</span>
+                  <span>{message}</span>
                 </div>
               </div>
             );
