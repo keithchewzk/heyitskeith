@@ -1,9 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import AppBar from "./components/AppBar/AppBar";
 import Hero from "./components/Hero/Hero";
-import Journey from "./components/Journey/Journey";
-import Skills from "./components/Skills/Skills";
 import Interview from "./components/Interview/Interview";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
@@ -27,18 +24,17 @@ function App() {
             setSelectedSection={setSelectedSection}
           />
         </div>
-        <div className="w-full md:w-6/12 py-40">
+        <div className="flex flex-col w-full md:w-6/12 py-40 gap-28">
           <div id="about">
             <About />
           </div>
           <div id="experience">
             <Experience />
           </div>
-
-          {/* <Journey /> */}
+          <div id="interview">
+            <Interview />
+          </div>
         </div>
-        {/* <Skills /> */}
-        {/* <Interview /> */}
       </div>
     </div>
   );

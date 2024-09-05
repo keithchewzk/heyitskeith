@@ -8,7 +8,6 @@ function About() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="mb-28"
     >
       <p className="mb-5 text-text-secondary">{aboutMeParaOne}</p>
       <p className="text-text-secondary">{aboutMeParaTwo}</p>

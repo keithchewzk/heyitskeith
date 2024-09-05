@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Section from "../common/Section";
-import styles from "./Interview.module.css";
 import Conversation from "./Conversation";
 import MessageInput from "./MessageInput";
 import Suggestions from "./Suggestions";
@@ -45,16 +43,14 @@ function Interview() {
   }
 
   return (
-    <Section header="Interview me">
-      <div className={styles.chatContainer}>
-        <Conversation conversation={conversation} />
-        <Suggestions addToConversation={addToConversation} />
-        <MessageInput
-          addToConversation={addToConversation}
-          isResponding={isResponding}
-        />
-      </div>
-    </Section>
+    <div className="flex flex-col h-[70vh]">
+      <Conversation conversation={conversation} />
+      {/* <Suggestions addToConversation={addToConversation} /> */}
+      <MessageInput
+        addToConversation={addToConversation}
+        isResponding={isResponding}
+      />
+    </div>
   );
 }
 
