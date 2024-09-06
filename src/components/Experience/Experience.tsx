@@ -12,6 +12,7 @@ interface JobProps {
 }
 
 function Experience() {
+  jobsArray.sort((a, b) => Number(b.id) - Number(a.id));
   const [jobs, setJobs] = useState<JobProps[]>(jobsArray);
 
   // useEffect(() => {
