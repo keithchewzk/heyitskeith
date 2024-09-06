@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Job from "./Job";
+import { jobsArray } from "./constants";
 
 interface JobProps {
   id: string;
@@ -19,7 +20,10 @@ function Experience() {
     )
       .then((response) => response.json())
       .then((responseObject) => setJobs(responseObject.experiences))
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        console.error(error);
+        setJobs(jobsArray);
+      });
   }, []);
   return (
     <div>

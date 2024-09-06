@@ -1,6 +1,6 @@
-export const jobs = [
+export const jobsArray = [
   {
-    id: 0,
+    id: "0",
     role: "Undergraduate",
     company: "NUS",
     description: "Graduated with a bachelor's degree in Computational Biology",
@@ -16,7 +16,7 @@ export const jobs = [
     ],
   },
   {
-    id: 1,
+    id: "1",
     role: "Cloud Engineer",
     company: "MSD",
     description:
@@ -25,7 +25,7 @@ export const jobs = [
     skills: ["Python", "AWS", "SQL"],
   },
   {
-    id: 2,
+    id: "2",
     role: "Software Engineer",
     company: "MSD",
     description:
@@ -34,7 +34,7 @@ export const jobs = [
     skills: ["NextJS", "TypeScript", "React Native", "AWS"],
   },
   {
-    id: 3,
+    id: "3",
     role: "AI Engineer",
     company: "MSD",
     description:
