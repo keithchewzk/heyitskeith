@@ -5,10 +5,11 @@ import { jobsArray } from "./constants";
 interface JobProps {
   id: string;
   role: string;
+  company: string;
   description: string;
+  additionalDescription: string;
   dateRange: string;
   skills: Array<string>;
-  company: string;
 }
 
 function Experience() {
@@ -29,18 +30,29 @@ function Experience() {
 
   return (
     <div>
-      {jobs.map(({ id, role, description, dateRange, skills, company }) => {
-        return (
-          <Job
-            key={id}
-            role={role}
-            description={description}
-            dateRange={dateRange}
-            skills={skills}
-            company={company}
-          />
-        );
-      })}
+      {jobs.map(
+        ({
+          id,
+          role,
+          company,
+          description,
+          additionalDescription,
+          dateRange,
+          skills,
+        }) => {
+          return (
+            <Job
+              key={id}
+              role={role}
+              description={description}
+              additionalDescription={additionalDescription}
+              dateRange={dateRange}
+              skills={skills}
+              company={company}
+            />
+          );
+        }
+      )}
     </div>
   );
 }

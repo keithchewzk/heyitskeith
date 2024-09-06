@@ -1,15 +1,48 @@
+import { useState } from "react";
 import Skills from "./Skills";
 import { motion } from "framer-motion";
 
 interface Props {
   role: string;
+  company: string;
   description: string;
+  additionalDescription: string;
   dateRange: string;
   skills: Array<string>;
-  company: string;
 }
 
-function Job({ role, description, dateRange, skills, company }: Props) {
+function Job({
+  role,
+  description,
+  additionalDescription,
+  dateRange,
+  skills,
+  company,
+}: Props) {
+  const [showAdditionalDescription, setShowAdditionalDescription] =
+    useState<boolean>(false);
+
+  const variants = {
+    initial: (direction: number) => ({
+      y: direction > 0 ? 50 : -50, // Swipe out down or up
+      opacity: 0,
+    }),
+    animate: {
+      y: 0, // Set it to the original position when animating
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    exit: (direction: number) => ({
+      y: direction > 0 ? -50 : 50, // Swipe in down or up
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+      },
+    }),
+  };
+
   return (
     <motion.div
       initial={{
@@ -31,7 +64,14 @@ function Job({ role, description, dateRange, skills, company }: Props) {
       </p>
       <p className="text-2xl font-medium">{role}</p>
       <p className="text-xl mb-2">{company}</p>
-      <p className="text-md mb-5 text-text-secondary">{description}</p>
+      <div
+        className="mb-5 cursor-pointer"
+        onClick={() => setShowAdditionalDescription(!showAdditionalDescription)}
+      >
+        <p className="text-md text-text-secondary">
+          {showAdditionalDescription ? additionalDescription : description}
+        </p>
+      </div>
       <Skills skills={skills} />
     </motion.div>
   );
