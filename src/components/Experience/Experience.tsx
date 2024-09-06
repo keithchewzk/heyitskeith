@@ -12,19 +12,20 @@ interface JobProps {
 }
 
 function Experience() {
-  const [jobs, setJobs] = useState<JobProps[]>([]);
+  const [jobs, setJobs] = useState<JobProps[]>(jobsArray);
 
-  useEffect(() => {
-    fetch(
-      "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/experiences"
-    )
-      .then((response) => response.json())
-      .then((responseObject) => setJobs(responseObject.experiences))
-      .catch((error) => {
-        console.error(error);
-        setJobs(jobsArray);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch(
+  //     "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/experiences"
+  //   )
+  //     .then((response) => response.json())
+  //     .then((responseObject) => setJobs(responseObject.experiences))
+  //     .catch((error) => {
+  //       console.error(error);
+  //       setJobs(jobsArray);
+  //     });
+  // }, []);
+
   return (
     <div>
       {jobs.map(({ id, role, description, dateRange, skills, company }) => {
