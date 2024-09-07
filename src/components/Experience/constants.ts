@@ -1,10 +1,10 @@
-export const jobsArray = [
+export const JOBS = [
   {
     id: "0",
     role: "Undergraduate",
     company: "NUS",
     description: "Bachelor's degree in Computational Biology",
-    additionalDescription: [""],
+    additionalDescription: undefined,
     dateRange: "Aug 2019 - May 2023",
     skills: [
       "Bioinformatics",
@@ -23,9 +23,9 @@ export const jobsArray = [
     description:
       "I developed automations for Cloud Business Office to enhance reporting, cost visibility, and resource utilization.",
     additionalDescription: [
-      "• Developed data pipelines for timely cloud resource reporting to support team decision-making.",
-      "• Built automations to improve cost visibility for cloud applications.",
-      "• Facilitated data transformation efforts to migrate users to dedicated AWS accounts for improved cost accountability.",
+      "Developed data pipelines for timely cloud resource reporting to support team decision-making.",
+      "Built automations to improve cost visibility for cloud applications.",
+      "Facilitated data transformation efforts to migrate users to dedicated AWS accounts for improved cost accountability.",
     ],
     dateRange: "Jul 2023 - Dec 2024",
     skills: ["Python", "AWS", "SQL"],

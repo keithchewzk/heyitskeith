@@ -6,7 +6,7 @@ interface Props {
   role: string;
   company: string;
   description: string;
-  additionalDescription: Array<string>;
+  additionalDescription: Array<string> | undefined;
   dateRange: string;
   skills: Array<string>;
 }
@@ -44,11 +44,11 @@ function Job({
       <p className="text-2xl font-medium">{role}</p>
       <p className="text-xl mb-3">{company}</p>
       <motion.div
-        className="mb-5 -m-2 p-2 cursor-pointer hover:shadow-pop-right transition-shadow"
+        className="mb-3 -m-2 p-2 cursor-pointer hover:shadow-pop-right transition-shadow"
         onHoverStart={() => setShowAdditionalDescription(true)}
         onHoverEnd={() => setShowAdditionalDescription(false)}
       >
-        <p className="text-md text-text-secondary mb-1">{description}</p>
+        <p className="text-md text-text-secondary mb-2">{description}</p>
         <AnimatePresence>
           {showAdditionalDescription && (
             <motion.div
@@ -61,9 +61,13 @@ function Job({
               }}
               transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
             >
-              {additionalDescription.map((desc) => (
-                <p className="text-md text-text-secondary mb-1">{desc}</p>
-              ))}
+              {additionalDescription &&
+                additionalDescription.map((desc) => (
+                  <div className="flex">
+                    <p className="mr-1">•</p>
+                    <p className="text-md text-text-secondary mb-1">{desc}</p>
+                  </div>
+                ))}
             </motion.div>
           )}
         </AnimatePresence>

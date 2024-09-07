@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Job from "./Job";
-import { jobsArray } from "./constants";
+import { JOBS } from "./constants";
 
 interface JobProps {
   id: string;
   role: string;
   company: string;
   description: string;
-  additionalDescription: Array<string>;
+  additionalDescription: Array<string> | undefined;
   dateRange: string;
   skills: Array<string>;
 }
 
 function Experience() {
-  jobsArray.sort((a, b) => Number(b.id) - Number(a.id));
-  const [jobs, setJobs] = useState<JobProps[]>(jobsArray);
+  JOBS.sort((a, b) => Number(b.id) - Number(a.id));
+  const [jobs, setJobs] = useState<JobProps[]>(JOBS);
 
   // useEffect(() => {
   //   fetch(
