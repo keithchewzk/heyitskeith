@@ -43,7 +43,7 @@ function Interview() {
   }
 
   return (
-    <div className="flex flex-col h-[70vh]">
+    <div className="flex flex-col">
       <Conversation conversation={conversation} />
       {/* <Suggestions addToConversation={addToConversation} /> */}
       <MessageInput
