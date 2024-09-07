@@ -25,6 +25,7 @@ function Navigator({ selectedSection, setSelectedSection }: Props) {
         {sections.map((section) => {
           return (
             <motion.div
+              key={section}
               className="text-text-primary cursor-pointer text-lg font-medium p-0.5"
               whileHover={{ x: 5 }}
               onClick={() => {
