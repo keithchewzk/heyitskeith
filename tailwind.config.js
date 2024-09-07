@@ -15,6 +15,15 @@ module.exports = {
         "field-primary": "var(--field-primary)",
         "link-primary": "var(--link-primary)",
         "box-color": "var(--box-color)",
+        "shadow-primary": "var(--shadow-primary)",
+      },
+      boxShadow: {
+        "pop-right": "-2px 2px 1px 1px var(--shadow-primary)", // Custom shadow for left and bottom
+      },
+    },
+    variants: {
+      extend: {
+        boxShadow: ["hover"], // Enable hover state for boxShadow
       },
     },
   },

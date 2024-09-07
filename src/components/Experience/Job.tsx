@@ -42,9 +42,9 @@ function Job({
         {dateRange}
       </p>
       <p className="text-2xl font-medium">{role}</p>
-      <p className="text-xl mb-2">{company}</p>
+      <p className="text-xl mb-3">{company}</p>
       <div
-        className="mb-5 cursor-pointer"
+        className="mb-5 -m-2 p-2 cursor-pointer hover:shadow-pop-right hover:translate-x-1 hover:-translate-y-1"
         onClick={() => setShowAdditionalDescription(!showAdditionalDescription)}
       >
         <p className="text-md text-text-secondary mb-1">{description}</p>
