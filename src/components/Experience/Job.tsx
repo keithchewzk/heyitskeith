@@ -43,9 +43,10 @@ function Job({
       </p>
       <p className="text-2xl font-medium">{role}</p>
       <p className="text-xl mb-3">{company}</p>
-      <div
-        className="mb-5 -m-2 p-2 cursor-pointer hover:shadow-pop-right hover:translate-x-1 hover:-translate-y-1"
-        onClick={() => setShowAdditionalDescription(!showAdditionalDescription)}
+      <motion.div
+        className="mb-5 -m-2 p-2 cursor-pointer hover:shadow-pop-right transition-shadow"
+        onHoverStart={() => setShowAdditionalDescription(true)}
+        onHoverEnd={() => setShowAdditionalDescription(false)}
       >
         <p className="text-md text-text-secondary mb-1">{description}</p>
         <AnimatePresence>
@@ -64,7 +65,7 @@ function Job({
             </motion.p>
           )}
         </AnimatePresence>
-      </div>
+      </motion.div>
       <Skills skills={skills} />
     </motion.div>
   );

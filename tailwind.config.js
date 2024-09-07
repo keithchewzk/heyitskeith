@@ -18,7 +18,7 @@ module.exports = {
         "shadow-primary": "var(--shadow-primary)",
       },
       boxShadow: {
-        "pop-right": "-2px 2px 5px 1px var(--shadow-primary)", // Custom shadow for left and bottom
+        "pop-right": "2px 2px 5px 0px var(--shadow-primary)", // Custom shadow for left and bottom
       },
     },
     variants: {
