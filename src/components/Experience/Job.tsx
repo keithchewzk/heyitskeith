@@ -6,7 +6,7 @@ interface Props {
   role: string;
   company: string;
   description: string;
-  additionalDescription: string;
+  additionalDescription: Array<string>;
   dateRange: string;
   skills: Array<string>;
 }
@@ -51,7 +51,7 @@ function Job({
         <p className="text-md text-text-secondary mb-1">{description}</p>
         <AnimatePresence>
           {showAdditionalDescription && (
-            <motion.p
+            <motion.div
               initial="collapsed"
               animate="open"
               exit="collapsed"
@@ -61,8 +61,10 @@ function Job({
               }}
               transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
             >
-              {additionalDescription}
-            </motion.p>
+              {additionalDescription.map((desc) => (
+                <p className="text-md text-text-secondary mb-1">{desc}</p>
+              ))}
+            </motion.div>
           )}
         </AnimatePresence>
       </motion.div>

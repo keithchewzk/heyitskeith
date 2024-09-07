@@ -7,7 +7,7 @@ interface JobProps {
   role: string;
   company: string;
   description: string;
-  additionalDescription: string;
+  additionalDescription: Array<string>;
   dateRange: string;
   skills: Array<string>;
 }
