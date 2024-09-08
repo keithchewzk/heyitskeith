@@ -7,14 +7,11 @@ import Experience from "./components/Experience/Experience";
 import Navigator from "./components/Navigator/Navigator";
 
 function App() {
-  const [isDark, setIsDark] = useState(true);
+  // const [isDark, setIsDark] = useState(true);
   const [selectedSection, setSelectedSection] = useState("About");
 
   return (
-    <div
-      className="bg-background-primary"
-      data-theme={isDark ? "dark" : "light"}
-    >
+    <div className="bg-background-primary" data-theme={true ? "dark" : "light"}>
       <div className="flex max-w-5xl md:gap-20 m-auto px-10 flex-col md:flex-row">
         <div className="w-full md:w-6/12 md:sticky top-0 pt-40 max-h-screen">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}

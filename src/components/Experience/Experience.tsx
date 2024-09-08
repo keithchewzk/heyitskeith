@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Job from "./Job";
 import { JOBS } from "./constants";
 
@@ -14,7 +14,7 @@ interface JobProps {
 
 function Experience() {
   JOBS.sort((a, b) => Number(b.id) - Number(a.id));
-  const [jobs, setJobs] = useState<JobProps[]>(JOBS);
+  // const [jobs, setJobs] = useState<JobProps[]>(JOBS);
 
   // useEffect(() => {
   //   fetch(
@@ -30,7 +30,7 @@ function Experience() {
 
   return (
     <div>
-      {jobs.map(
+      {JOBS.map(
         ({
           id,
           role,

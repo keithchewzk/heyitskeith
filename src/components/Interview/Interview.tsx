@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Conversation from "./Conversation";
 import MessageInput from "./MessageInput";
-import Suggestions from "./Suggestions";
 interface Message {
   assistant?: string;
   user?: string;
