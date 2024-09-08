@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Job from "./Job";
 import { JOBS } from "./constants";
 
-interface JobProps {
-  id: string;
-  role: string;
-  company: string;
-  description: string;
-  additionalDescription: Array<string> | undefined;
-  dateRange: string;
-  skills: Array<string>;
-}
+// interface JobProps {
+//   id: string;
+//   role: string;
+//   company: string;
+//   description: string;
+//   additionalDescription: Array<string> | undefined;
+//   dateRange: string;
+//   skills: Array<string>;
+// }
 
 function Experience() {
   JOBS.sort((a, b) => Number(b.id) - Number(a.id));
