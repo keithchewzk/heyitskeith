@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./MessageInput.module.css";
 interface Props {
   addToConversation: Function;
   isResponding: boolean;
