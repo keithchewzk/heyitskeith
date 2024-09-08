@@ -44,7 +44,7 @@ function Job({
       <p className="text-2xl font-medium">{role}</p>
       <p className="text-xl mb-3">{company}</p>
       <motion.div
-        className="mb-3 -m-2 p-2 cursor-pointer hover:shadow-pop-right transition-shadow"
+        className="mb-3 -m-2 p-2 cursor-pointer"
         onHoverStart={() => setShowAdditionalDescription(true)}
         onHoverEnd={() => setShowAdditionalDescription(false)}
       >

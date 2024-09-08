@@ -55,6 +55,26 @@ code {
     monospace;
 }
 
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-tertiary); /* Dark color for the scrollbar handle */
+  border-radius: 10px; /* Rounded corners for the scrollbar handle */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-primary); /* Dark color for the scrollbar track */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: var(--text-tertiary) var(--background-primary); /* Thumb color and track color */
+}
+
 @font-face {
   font-family: 'League Spartan';
   font-weight: 100 900;

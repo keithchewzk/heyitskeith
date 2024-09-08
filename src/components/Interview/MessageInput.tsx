@@ -19,13 +19,13 @@ function MessageInput({ addToConversation, isResponding }: Props) {
   };
 
   return (
-    <form id="messageForm" style={{ width: "100%" }} onSubmit={handleSubmit}>
-      <div className={styles.messageInputContainer}>
+    <form id="messageForm" onSubmit={handleSubmit}>
+      <div className="flex justify-between items-center bg-[var(--app-box-color-light)] rounded-full pl-4 pr-2 py-2">
         <input
-          className={styles.messageInput}
+          className="bg-transparent border-none w-full text-[var(--app-large-text-color)] text-base focus:outline-none"
           name="userMessange"
           type="string"
-          placeholder="Interview me, fire away!"
+          placeholder="Talk to me"
           value={userInput}
           onChange={(e) => {
             const currentInput = e.target.value;
@@ -36,11 +36,11 @@ function MessageInput({ addToConversation, isResponding }: Props) {
         <button
           form="messageForm"
           type="submit"
-          className={styles.iconButton}
+          className="flex justify-center items-center bg-[var(--app-box-color-dark)] p-2.5 border-none rounded-full"
           disabled={!submittable}
         >
           <img
-            style={{ width: "15px", height: "15px" }}
+            className="w-3 h-3"
             src={require("./arrowUp.svg").default}
             alt="Arrow pointing upwads"
           />

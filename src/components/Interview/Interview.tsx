@@ -7,7 +7,9 @@ interface Message {
 }
 
 function Interview() {
-  const [conversation, setConversation] = useState<Message[]>([]);
+  const [conversation, setConversation] = useState<Message[]>([
+    { assistant: "Hey! It's Keith. You can interview me here." },
+  ]);
   const [isResponding, setIsResponding] = useState(false);
 
   async function callGptApi(userPrompt: string) {

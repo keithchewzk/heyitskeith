@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 interface Message {
   assistant?: string;
@@ -10,8 +10,16 @@ interface Props {
 }
 
 function Conversation({ conversation }: Props) {
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight; // Scroll to bottom
+    }
+  }, [conversation]); // This will run every time "conversation" changes
+
   return (
-    <div className="min-h-80 overflow-y-auto">
+    <div className="h-80 overflow-y-auto mb-8" ref={scrollRef}>
       {conversation.length === 0 ? (
         <div className="flex justify-center items-center h-full">
           <img

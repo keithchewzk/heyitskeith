@@ -21,13 +21,15 @@ function App() {
             setSelectedSection={setSelectedSection}
           />
         </div>
-        <div className="flex flex-col w-full md:w-6/12 py-40 gap-28">
+        <div className="flex flex-col w-full md:w-6/12 py-40">
           <div id="about">
             <About />
           </div>
+          <div className="border-t border-button-secondary my-20"></div>
           <div id="experience">
             <Experience />
           </div>
+          <div className="border-t border-button-secondary my-20"></div>
           <div id="interview">
             <Interview />
           </div>
