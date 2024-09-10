@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="bg-background-primary" data-theme={true ? "dark" : "light"}>
       <div className="flex max-w-5xl md:gap-20 m-auto px-10 flex-col md:flex-row">
-        <div className="flex flex-col w-full md:w-6/12 md:sticky top-0 py-40 max-h-screen">
+        <div className="flex flex-col w-full pt-40 md:w-6/12 md:sticky md:top-0 md:pb-40 md:max-h-screen">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
           <Hero />
           <Navigator
@@ -23,7 +23,7 @@ function App() {
           />
           <Socials />
         </div>
-        <div className="flex flex-col w-full md:w-6/12 py-40">
+        <div className="flex flex-col pb-40 w-full md:w-6/12 md:pt-40">
           <div id="about">
             <About />
           </div>
