@@ -13,6 +13,9 @@ function Socials() {
     link.click();
     document.body.removeChild(link); // Clean up the link
   };
+  const handleEmail = () => {
+    window.location.href = "mailto:keitchewzk@gmail.com";
+  };
   const icons = [
     {
       Component: ResumeIcon,
@@ -22,7 +25,7 @@ function Socials() {
     {
       Component: EmailIcon,
       key: "email",
-      onClickHandler: handleDownloadResume,
+      onClickHandler: handleEmail,
     },
     {
       Component: GithubIcon,
