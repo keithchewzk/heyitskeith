@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/heyitskeith/static/css/main.7e02ca75.css",
-    "main.js": "/heyitskeith/static/js/main.c6a311ea.js",
+    "main.css": "/heyitskeith/static/css/main.663bd0fa.css",
+    "main.js": "/heyitskeith/static/js/main.d1a57c7a.js",
     "static/media/headshot.svg": "/heyitskeith/static/media/headshot.1b2f2bbe5e1b03b7e8264392c9aa438a.svg",
     "static/media/JetBrainsMono-VariableFont_wght.ttf": "/heyitskeith/static/media/JetBrainsMono-VariableFont_wght.d08f929cab66fc19b568.ttf",
     "static/media/LeagueSpartan-VariableFont_wght.ttf": "/heyitskeith/static/media/LeagueSpartan-VariableFont_wght.373d611ec44856608b96.ttf",
@@ -11,11 +11,11 @@
     "static/media/resume.svg": "/heyitskeith/static/media/resume.293eca0835155f87e93303f02a387463.svg",
     "index.html": "/heyitskeith/index.html",
     "static/media/arrowUp.svg": "/heyitskeith/static/media/arrowUp.4bc55464b05bc17164eae240da44a4fc.svg",
-    "main.7e02ca75.css.map": "/heyitskeith/static/css/main.7e02ca75.css.map",
-    "main.c6a311ea.js.map": "/heyitskeith/static/js/main.c6a311ea.js.map"
+    "main.663bd0fa.css.map": "/heyitskeith/static/css/main.663bd0fa.css.map",
+    "main.d1a57c7a.js.map": "/heyitskeith/static/js/main.d1a57c7a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e02ca75.css",
-    "static/js/main.c6a311ea.js"
+    "static/css/main.663bd0fa.css",
+    "static/js/main.d1a57c7a.js"
   ]
 }
