@@ -21,11 +21,12 @@ export const JOBS = [
     role: "Cloud Engineer",
     company: "MSD",
     description:
-      "I developed automations for Cloud Business Office to enhance reporting, cost visibility, and resource utilization.",
+      "Cloud Business Office aims to optimise resource management through analysis of resource spending and engineering cloud-based automations to enhance cost visibility and accountability across enterprise applications. My role as a cloud engineer focused more on the latter.",
     additionalDescription: [
-      "Developed data pipelines for timely cloud resource reporting to support team decision-making.",
-      "Built automations to improve cost visibility for cloud applications.",
-      "Facilitated data transformation efforts to migrate users to dedicated AWS accounts for improved cost accountability.",
+      "Developed AWS architectures to streamline internal reporting, ensuring precise resource cost allocation. Used services such as Lambda, DynamoDB, S3, SQS, Glue, etc.",
+      "Data transformation initiatives as part of a larger project migrating users to dedicated AWS accounts to improve cost accountability for enterprise applications.",
+      "Migration of team's cloud resources to Terraform following company movement towards IaC adoption.",
+      "Created dashboards for application owners to self-manage cloud spending practices in their teams.",
     ],
     dateRange: "Jul 2023 - Dec 2024",
     skills: ["Python", "AWS", "SQL"],
@@ -35,8 +36,12 @@ export const JOBS = [
     role: "Software Engineer",
     company: "MSD",
     description:
-      "My second rotation was in the Global Software Development team. I contributed to both full-stack web and mobile application development. I developed and maintained the company’s in-house link shortening and QR code generation software, handling both frontend and backend tasks to ensure a seamless user experience. Additionally, I played a key role in creating a mobile application for enterprise leadership skills, enhancing its functionality and usability. My responsibilities also included product management tasks, where I gathered user requirements, coordinated with stakeholders, and oversaw product delivery to ensure alignment with business objectives and user needs.",
-    additionalDescription: ["Somethiing else"],
+      "The Central Software Engineering team focuses on delivery of enterprise-level software applications through engineering best practices. As a software engineer, I worked on technical development of 2 products, with an additional stretch in product discovery.",
+    additionalDescription: [
+      "Full-stack development for an enterprise short link management tool with Next.js, TypeScript, and AWS. ",
+      "Mobile frontend development for a leadership skills application with React Native.",
+      "Engaged in product discovery by conducting user interviews to inform design and development decisions.",
+    ],
     dateRange: "Jan 2024 - Jun 2024",
     skills: ["NextJS", "TypeScript", "React Native", "AWS"],
   },
@@ -45,8 +50,11 @@ export const JOBS = [
     role: "AI Engineer",
     company: "MSD",
     description:
-      "During my third rotation, I joined the Hyperautomation & AI team, where I worked on engineering solutions for our company's enterprise generative AI software, talkGPTeal. My primary focus was on developing a robust backend repository and enhancing the current model through prompt engineering and Retrieval-Augmented Generation (RAG) techniques. I successfully improved talkGPTeal's capability to search through internal company data by implementing RAG methods, contributing to more efficient data retrieval and model performance.",
-    additionalDescription: ["Somethiing else"],
+      "Hyperautomation & AI drives the integration of AI technologies to improve productivity and capabilities across business and IT areas. As an AI Engineer, I developed feature enhancements on the backend of MSD's enterprise GenAI chat application.",
+    additionalDescription: [
+      "Enabled users to contextualise prompts using internal company data through prompt engineering, orchestration, and RAG.",
+      "Built product backend CI pipeline to streamline code testing and scanning capabilities.",
+    ],
     dateRange: "Jul 2024 - Present",
     skills: ["Python", "Backend", "Prompt Eng.", "RAG", "APIs"],
   },
