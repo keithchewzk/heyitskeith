@@ -13,9 +13,15 @@ function Socials() {
     link.click();
     document.body.removeChild(link); // Clean up the link
   };
+
   const handleEmail = () => {
     window.location.href = "mailto:keitchewzk@gmail.com";
   };
+
+  const handleLinkRedirect = (link: string) => {
+    window.open(link, "_blank"); // Opens the URL in a new tab
+  };
+
   const icons = [
     {
       Component: ResumeIcon,
@@ -30,12 +36,13 @@ function Socials() {
     {
       Component: GithubIcon,
       key: "github",
-      onClickHandler: handleDownloadResume,
+      onClickHandler: () => handleLinkRedirect("https://github.com/kippsss"),
     },
     {
       Component: LinkedinIcon,
       key: "linkedin",
-      onClickHandler: handleDownloadResume,
+      onClickHandler: () =>
+        handleLinkRedirect("https://www.linkedin.com/in/keith-chew-36745a1ba/"),
     },
   ];
 
