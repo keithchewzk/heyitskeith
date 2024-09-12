@@ -15,7 +15,7 @@ function Socials() {
   };
 
   const handleEmail = () => {
-    window.location.href = "mailto:keitchewzk@gmail.com";
+    window.location.href = "mailto:keithchewzk@gmail.com";
   };
 
   const handleLinkRedirect = (link: string) => {
