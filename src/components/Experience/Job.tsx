@@ -62,8 +62,8 @@ function Job({
               transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
             >
               {additionalDescription &&
-                additionalDescription.map((desc) => (
-                  <div className="flex">
+                additionalDescription.map((desc, index) => (
+                  <div key={index} className="flex">
                     <p className="mr-1">•</p>
                     <p className="text-md text-text-secondary mb-1">{desc}</p>
                   </div>
