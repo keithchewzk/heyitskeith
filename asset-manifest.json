@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/heyitskeith/static/css/main.b0fd7b48.css",
-    "main.js": "/heyitskeith/static/js/main.bedff1ad.js",
+    "main.js": "/heyitskeith/static/js/main.277d5a32.js",
     "static/media/headshot.svg": "/heyitskeith/static/media/headshot.1b2f2bbe5e1b03b7e8264392c9aa438a.svg",
     "static/media/JetBrainsMono-VariableFont_wght.ttf": "/heyitskeith/static/media/JetBrainsMono-VariableFont_wght.d08f929cab66fc19b568.ttf",
     "static/media/LeagueSpartan-VariableFont_wght.ttf": "/heyitskeith/static/media/LeagueSpartan-VariableFont_wght.373d611ec44856608b96.ttf",
@@ -12,10 +12,10 @@
     "index.html": "/heyitskeith/index.html",
     "static/media/arrowUp.svg": "/heyitskeith/static/media/arrowUp.4bc55464b05bc17164eae240da44a4fc.svg",
     "main.b0fd7b48.css.map": "/heyitskeith/static/css/main.b0fd7b48.css.map",
-    "main.bedff1ad.js.map": "/heyitskeith/static/js/main.bedff1ad.js.map"
+    "main.277d5a32.js.map": "/heyitskeith/static/js/main.277d5a32.js.map"
   },
   "entrypoints": [
     "static/css/main.b0fd7b48.css",
-    "static/js/main.bedff1ad.js"
+    "static/js/main.277d5a32.js"
   ]
 }
