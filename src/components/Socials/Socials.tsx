@@ -13,7 +13,7 @@ function Socials() {
   ];
 
   return (
-    <div className="flex gap-5 mt-auto">
+    <div className="flex gap-5 mt-20">
       {icons.map(({ Component, key }) => (
         <motion.div
           key={key}
