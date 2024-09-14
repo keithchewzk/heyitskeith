@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Skills from "./Skills";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface Props {
   role: string;
@@ -23,57 +22,32 @@ function Job({
     useState<boolean>(false);
 
   return (
-    <motion.div
-      initial={{
-        x: 20,
-        opacity: 0,
-      }}
-      whileInView={{
-        x: 0,
-        opacity: 1,
-        transition: {
-          duration: 0.4,
-        },
-      }}
-      viewport={{ once: true }}
-      className="mb-10"
-    >
+    <div className="mb-10 opacity-0 animate-fade-in translate-x-5">
       <p className="text-lg text-text-tertiary font-semibold mb-1">
         {dateRange}
       </p>
       <p className="text-2xl font-medium">{role}</p>
       <p className="text-xl mb-3">{company}</p>
-      <motion.div
+      <div
         className="mb-3 -m-2 p-2 cursor-pointer"
-        onHoverStart={() => setShowAdditionalDescription(true)}
-        onHoverEnd={() => setShowAdditionalDescription(false)}
+        onMouseEnter={() => setShowAdditionalDescription(true)}
+        onMouseLeave={() => setShowAdditionalDescription(false)}
       >
         <p className="text-md text-text-secondary mb-2">{description}</p>
-        <AnimatePresence>
-          {showAdditionalDescription && (
-            <motion.div
-              initial="collapsed"
-              animate="open"
-              exit="collapsed"
-              variants={{
-                open: { opacity: 1, height: "auto" },
-                collapsed: { opacity: 0, height: 0 },
-              }}
-              transition={{ duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] }}
-            >
-              {additionalDescription &&
-                additionalDescription.map((desc, index) => (
-                  <div key={index} className="flex">
-                    <p className="mr-1">•</p>
-                    <p className="text-md text-text-secondary mb-1">{desc}</p>
-                  </div>
-                ))}
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.div>
+        {showAdditionalDescription && (
+          <div className="transition-all duration-300 ease-out overflow-hidden">
+            {additionalDescription &&
+              additionalDescription.map((desc, index) => (
+                <div key={index} className="flex">
+                  <p className="mr-1">•</p>
+                  <p className="text-md text-text-secondary mb-1">{desc}</p>
+                </div>
+              ))}
+          </div>
+        )}
+      </div>
       <Skills skills={skills} />
-    </motion.div>
+    </div>
   );
 }
 

@@ -20,6 +20,15 @@ module.exports = {
       boxShadow: {
         "pop-right": "2px 2px 5px 0px var(--shadow-primary)", // Custom shadow for left and bottom
       },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
+      animation: {
+        "fade-in": "fadeIn 1s ease-out forwards",
+      },
     },
     variants: {
       extend: {

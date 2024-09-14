@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { ReactComponent as ResumeIcon } from "./assets/resume.svg";
 import { ReactComponent as GithubIcon } from "./assets/github.svg";
 import { ReactComponent as LinkedinIcon } from "./assets/linkedin.svg";
@@ -49,15 +48,13 @@ function Socials() {
   return (
     <div className="flex gap-5 mt-20">
       {icons.map(({ Component, key, onClickHandler }) => (
-        <motion.div
+        <div
           key={key}
-          initial={{ scale: 1, opacity: 0.5 }}
-          whileHover={{ scale: 1.2, opacity: 1 }}
-          transition={{ duration: 0.2, ease: "easeInOut" }}
+          className="transform transition-transform duration-200 ease-in-out hover:scale-110 opacity-75 hover:opacity-100 cursor-pointer"
           onClick={onClickHandler}
         >
-          <Component className="w-6 h-6 cursor-pointer fill-text-primary" />
-        </motion.div>
+          <Component className="w-6 h-6 fill-text-primary" />
+        </div>
       ))}
     </div>
   );

@@ -3,7 +3,6 @@ import styles from "./AppBar.module.css";
 import GoTos from "./GoTos";
 import { ReactComponent as SunIcon } from "./assets/sun.svg";
 import { ReactComponent as MoonIcon } from "./assets/moon.svg";
-import { motion } from "framer-motion";
 
 interface Props {
   isDark: boolean;
@@ -20,7 +19,7 @@ function AppBar({ isDark, setIsDark }: Props) {
       <GoTos />
 
       {/* Dark theme switch */}
-      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+      <div className="transition-transform transform hover:scale-110 active:scale-90">
         {isDark ? (
           <SunIcon
             className={styles.icon}
@@ -36,7 +35,7 @@ function AppBar({ isDark, setIsDark }: Props) {
             }}
           />
         )}
-      </motion.div>
+      </div>
     </div>
   );
 }
