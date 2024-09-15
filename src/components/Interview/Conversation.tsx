@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
 interface Message {
   assistant?: string;
@@ -54,7 +55,7 @@ function Conversation({ conversation }: Props) {
                       : "flex flex-col justify-center"
                   }
                 >
-                  <span>{message}</span>
+                  <ReactMarkdown>{message}</ReactMarkdown>
                 </div>
               </div>
             );

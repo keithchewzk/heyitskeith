@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Conversation from "./Conversation";
 import MessageInput from "./MessageInput";
+import { systemPrompt } from "./constants";
 interface Message {
   assistant?: string;
   user?: string;
@@ -23,6 +24,7 @@ function Interview() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          systemPrompt: systemPrompt,
           userPrompt: userPrompt,
         }),
       }
