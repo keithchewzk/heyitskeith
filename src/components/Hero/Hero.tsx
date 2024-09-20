@@ -7,7 +7,7 @@ function Hero() {
         I'm
       </p>
       <p className="text-8xl font-medium mb-4">Keith</p>
-      <p className="text-2xl text-text-secondary">AI & Software Engineer</p>
+      <p className="text-2xl text-text-muted">AI & Software Engineer</p>
     </div>
   );
 }

@@ -6,19 +6,8 @@ module.exports = {
         "background-primary": "var(--background-primary)",
         "background-secondary": "var(--background-secondary)",
         "text-primary": "var(--text-primary)",
-        "text-secondary": "var(--text-secondary)",
-        "text-tertiary": "var(--text-tertiary)",
+        "text-muted": "var(--text-muted)",
         "button-primary": "var(--button-primary)",
-        "button-secondary": "var(--button-secondary)",
-        "border-primary": "var(--border-primary)",
-        "border-selected": "var(--border-selected)",
-        "field-primary": "var(--field-primary)",
-        "link-primary": "var(--link-primary)",
-        "box-color": "var(--box-color)",
-        "shadow-primary": "var(--shadow-primary)",
-      },
-      boxShadow: {
-        "pop-right": "2px 2px 5px 0px var(--shadow-primary)", // Custom shadow for left and bottom
       },
       keyframes: {
         fadeIn: {

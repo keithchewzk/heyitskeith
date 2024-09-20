@@ -9,7 +9,7 @@ function Skills({ skills }: Props) {
         return (
           <span
             key={skill}
-            className="inline-block text-md rounded-lg font-medium border border-solid border-border-primary bg-button-secondary text-text-secondary leading-6 px-3 pt-1 mb-3 mr-3"
+            className="inline-block text-md rounded-lg font-medium bg-background-secondary text-text-primary leading-6 px-3 pt-1 mb-3 mr-3"
           >
             {skill}
           </span>
