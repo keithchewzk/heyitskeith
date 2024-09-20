@@ -1,15 +1,14 @@
-import { useState } from "react";
 import "./App.css";
 import Hero from "./components/Hero/Hero";
-import Interview from "./components/Interview/Interview";
+// import Interview from "./components/Interview/Interview";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
-import Navigator from "./components/Navigator/Navigator";
+// import Navigator from "./components/Navigator/Navigator";
 import Socials from "./components/Socials/Socials";
 
 function App() {
   // const [isDark, setIsDark] = useState(true);
-  const [selectedSection, setSelectedSection] = useState("About");
+  // const [selectedSection, setSelectedSection] = useState("About");
 
   return (
     <div className="bg-background-primary" data-theme={true ? "dark" : "light"}>
@@ -18,25 +17,25 @@ function App() {
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
           <div>
             <Hero />
-            <Navigator
+            {/* <Navigator
               selectedSection={selectedSection}
               setSelectedSection={setSelectedSection}
-            />
+            /> */}
           </div>
           <Socials />
         </div>
-        <div className="flex flex-col py-20 w-full md:w-6/12">
+        <div className="flex flex-col py-20 w-full md:w-6/12 gap-24">
           <div id="about">
             <About />
           </div>
-          <div className="border-2 border-button-secondary my-20"></div>
+          {/* <div className="border-2 border-button-secondary my-20"></div> */}
           <div id="experience">
             <Experience />
           </div>
-          <div className="border-2 border-button-secondary my-20"></div>
-          <div id="interview me">
+          {/* <div className="border-2 border-button-secondary my-20"></div> */}
+          {/* <div id="interview me">
             <Interview />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
