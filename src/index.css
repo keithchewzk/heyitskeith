@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background-primary: #161B22;
-  --background-secondary: #0D1117;
-  --text-primary: #e6edf3;
-  --text-muted: #bacdde;
-  --button-primary: #238636;
+  --background-primary: #f5f0ff;
+  --background-secondary: #dcd6f7;
+  --text-primary: #424874;
+  --text-muted: #424874cc;
+  --button-primary: #a6b1e1;
 }
 
 [data-theme="dark"] {
-  --background-primary: #222831;
-  --background-secondary: #393e46;
+  --background-primary: hwb(216 13% 81%);
+  --background-secondary: #393E46;
   --text-primary: #eeeeee;
   --text-muted: #edededcc;
-  --button-primary: #00adb5;
+  --button-primary: #00ADB5;
 }
 
 p, h1, h2, h3, h4, h5, h6, span {
