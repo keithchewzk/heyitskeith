@@ -18,11 +18,11 @@ function Job({
   company,
 }: Props) {
   return (
-    <div className="flex flex-row mb-10 opacity-0 animate-fade-in">
-      <div className="mr-5 mt-1">
+    <div className="flex flex-col md:grid md:grid-cols-12 mb-10 opacity-0 animate-fade-in">
+      <div className="mt-1 md:col-span-4">
         <p className="text-md text-text-muted text-nowrap">{dateRange}</p>
       </div>
-      <div>
+      <div className="col-span-9 md:col-span-8">
         <p className="text-2xl font-medium">{role}</p>
         <p className="text-xl mb-3">{company}</p>
         <div className="mb-3 -m-2 p-2">
