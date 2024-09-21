@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/heyitskeith/static/css/main.ecd1ebce.css",
-    "main.js": "/heyitskeith/static/js/main.1a71e884.js",
+    "main.css": "/heyitskeith/static/css/main.848860b8.css",
+    "main.js": "/heyitskeith/static/js/main.3c232cbd.js",
     "static/media/JetBrainsMono-VariableFont_wght.ttf": "/heyitskeith/static/media/JetBrainsMono-VariableFont_wght.d08f929cab66fc19b568.ttf",
     "static/media/LeagueSpartan-VariableFont_wght.ttf": "/heyitskeith/static/media/LeagueSpartan-VariableFont_wght.373d611ec44856608b96.ttf",
     "static/media/github.svg": "/heyitskeith/static/media/github.d28dfc217711a6868f60980bf156e0cd.svg",
@@ -11,11 +11,11 @@
     "static/media/resume.svg": "/heyitskeith/static/media/resume.293eca0835155f87e93303f02a387463.svg",
     "static/media/moon.svg": "/heyitskeith/static/media/moon.ec18bf604022c85ff86b8f3f1908729a.svg",
     "index.html": "/heyitskeith/index.html",
-    "main.ecd1ebce.css.map": "/heyitskeith/static/css/main.ecd1ebce.css.map",
-    "main.1a71e884.js.map": "/heyitskeith/static/js/main.1a71e884.js.map"
+    "main.848860b8.css.map": "/heyitskeith/static/css/main.848860b8.css.map",
+    "main.3c232cbd.js.map": "/heyitskeith/static/js/main.3c232cbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecd1ebce.css",
-    "static/js/main.1a71e884.js"
+    "static/css/main.848860b8.css",
+    "static/js/main.3c232cbd.js"
   ]
 }
