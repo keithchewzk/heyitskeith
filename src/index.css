@@ -11,7 +11,7 @@
 }
 
 [data-theme="dark"] {
-  --background-primary: hwb(216 13% 81%);
+  --background-primary: #212730;
   --background-secondary: #393E46;
   --text-primary: #eeeeee;
   --text-muted: #edededcc;
