@@ -23,10 +23,10 @@ export const JOBS = [
     description:
       "Cloud Business Office aims to optimise resource management through analysis of resource spending and engineering cloud-based automations to enhance cost visibility and accountability across enterprise applications. My role as a cloud engineer focused more on the latter.",
     additionalDescription: [
-      "Developed AWS architectures to streamline internal reporting, ensuring precise resource cost allocation. Used services such as Lambda, DynamoDB, S3, SQS, Glue, etc.",
+      "Developed AWS architectures to streamline internal reporting, ensuring precise cost allocation. Used services such as Lambda, DynamoDB, S3, SQS, Glue, etc.",
       "Data transformation initiatives as part of a larger project migrating users to dedicated AWS accounts to improve cost accountability for enterprise applications.",
       "Migration of team's cloud resources to Terraform following company movement towards IaC adoption.",
-      "Created dashboards for application owners to self-manage cloud spending practices in their teams.",
+      "Backend development of dashboards for application owners to self-manage cloud spending practices in their teams.",
     ],
     dateRange: "Jul 2023 - Dec 2024",
     skills: ["Python", "AWS", "SQL"],
