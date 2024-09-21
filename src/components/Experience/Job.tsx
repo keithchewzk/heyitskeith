@@ -18,7 +18,7 @@ function Job({
   company,
 }: Props) {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-12 mb-10 opacity-0 animate-fade-in">
+    <div className="flex flex-col lg:grid lg:grid-cols-12 mb-10 opacity-0 animate-fade-in">
       <div className="mt-1 md:col-span-4">
         <p className="text-md text-text-muted text-nowrap">{dateRange}</p>
       </div>
