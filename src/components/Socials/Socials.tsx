@@ -46,7 +46,7 @@ function Socials() {
   ];
 
   return (
-    <div className="flex gap-5 mt-20">
+    <div className="flex gap-5">
       {icons.map(({ Component, key, onClickHandler }) => (
         <div
           key={key}
