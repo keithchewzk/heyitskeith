@@ -1,5 +1,4 @@
 export const aboutMeParaOne =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
+  "I discovered my passion for programming in university, where a required course sparked my interest. Since then, I’ve pursued a variety of areas through MSD's Emerging Talent Rotation Programme, including full-stack development, AI engineering, and cloud architecture. ";
 export const aboutMeParaTwo =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+  "As I’m early in my career, my focus is on building strong technical foundations, particularly in the fields of AI and software engineering. I’m always open to new opportunities that challenge me to learn and grow across the diverse landscape of technology.";
