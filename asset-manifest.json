@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/heyitskeith/static/css/main.9cb0d067.css",
-    "main.js": "/heyitskeith/static/js/main.09ac846b.js",
+    "main.css": "/heyitskeith/static/css/main.3db35168.css",
+    "main.js": "/heyitskeith/static/js/main.bbd07342.js",
     "static/media/JetBrainsMono-VariableFont_wght.ttf": "/heyitskeith/static/media/JetBrainsMono-VariableFont_wght.d08f929cab66fc19b568.ttf",
     "static/media/LeagueSpartan-VariableFont_wght.ttf": "/heyitskeith/static/media/LeagueSpartan-VariableFont_wght.373d611ec44856608b96.ttf",
     "static/media/github.svg": "/heyitskeith/static/media/github.d28dfc217711a6868f60980bf156e0cd.svg",
+    "static/media/sun.svg": "/heyitskeith/static/media/sun.f998a93ca3995b4da2329863c7894fc6.svg",
     "static/media/email.svg": "/heyitskeith/static/media/email.2cf23f74cb1ec3f69c989f1e902021d4.svg",
     "static/media/linkedin.svg": "/heyitskeith/static/media/linkedin.dfb9cfeb8f12dac366a35692612601d8.svg",
     "static/media/resume.svg": "/heyitskeith/static/media/resume.293eca0835155f87e93303f02a387463.svg",
+    "static/media/moon.svg": "/heyitskeith/static/media/moon.ec18bf604022c85ff86b8f3f1908729a.svg",
     "index.html": "/heyitskeith/index.html",
-    "static/media/theme.svg": "/heyitskeith/static/media/theme.36ddc6911b848ca30480cf8a8da9b715.svg",
-    "main.9cb0d067.css.map": "/heyitskeith/static/css/main.9cb0d067.css.map",
-    "main.09ac846b.js.map": "/heyitskeith/static/js/main.09ac846b.js.map"
+    "main.3db35168.css.map": "/heyitskeith/static/css/main.3db35168.css.map",
+    "main.bbd07342.js.map": "/heyitskeith/static/js/main.bbd07342.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cb0d067.css",
-    "static/js/main.09ac846b.js"
+    "static/css/main.3db35168.css",
+    "static/js/main.bbd07342.js"
   ]
 }
