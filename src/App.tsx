@@ -31,7 +31,7 @@ function App() {
       ) : (
         <MoonIcon className={iconClasses} onClick={iconClickHandler} />
       )}
-      <div className="flex max-w-5xl md:gap-20 m-auto px-10 flex-col md:flex-row">
+      <div className="flex max-w-5xl md:gap-20 m-auto px-20 flex-col md:flex-row">
         <div className="flex flex-col justify-between w-full pt-20 md:w-5/12 md:sticky md:top-0 md:pb-20 md:max-h-screen">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
           <div>
