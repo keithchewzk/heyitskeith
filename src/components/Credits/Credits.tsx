@@ -2,7 +2,7 @@ function Credits() {
   return (
     <p className="text-text-muted opacity-60 text-md md:text-right">
       Design inspired by{" "}
-      <a href="https://brittanychiang.com/" target="_blank">
+      <a href="https://brittanychiang.com/" target="_blank" rel="noreferrer">
         brittanychiang.com
       </a>
       <br />
