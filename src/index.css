@@ -65,12 +65,6 @@ code {
   src: url('/public/fonts/LeagueSpartan-VariableFont_wght.ttf');
 }
 
-@font-face {
-  font-family: 'JetBrainsMono';
-  font-weight: 100 800;
-  src: url('/public/fonts/JetBrainsMono-VariableFont_wght.ttf');
-}
-
 * {
   font-family: 'League Spartan';
 }
