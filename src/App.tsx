@@ -1,21 +1,32 @@
+import { useState } from "react";
 import Hero from "./components/Hero/Hero";
 // import Interview from "./components/Interview/Interview";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 // import Navigator from "./components/Navigator/Navigator";
 import Socials from "./components/Socials/Socials";
-import { ReactComponent as ThemeIcon } from "./theme.svg";
+import { ReactComponent as SunIcon } from "./assets/sun.svg";
+import { ReactComponent as MoonIcon } from "./assets/moon.svg";
 
 function App() {
-  // const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
+  const iconClasses =
+    "absolute right-6 top-4 w-6 cursor-pointer transform transition-transform duration-200 ease-in-out hover:scale-110 opacity-75 hover:opacity-100";
+  const iconClickHandler = () => {
+    setIsDark(!isDark);
+  };
   // const [selectedSection, setSelectedSection] = useState("About");
 
   return (
     <div
       className="bg-background-primary"
-      data-theme={false ? "dark" : "light"}
+      data-theme={isDark ? "dark" : "light"}
     >
-      <ThemeIcon className="absolute right-3 top-3" />
+      {isDark ? (
+        <SunIcon className={iconClasses} onClick={iconClickHandler} />
+      ) : (
+        <MoonIcon className={iconClasses} onClick={iconClickHandler} />
+      )}
       <div className="flex max-w-5xl md:gap-20 m-auto px-10 flex-col md:flex-row">
         <div className="flex flex-col justify-between w-full pt-20 md:w-5/12 md:sticky md:top-0 md:pb-20 md:max-h-screen">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}

@@ -1,7 +1,7 @@
-import { ReactComponent as ResumeIcon } from "./assets/resume.svg";
-import { ReactComponent as GithubIcon } from "./assets/github.svg";
-import { ReactComponent as LinkedinIcon } from "./assets/linkedin.svg";
-import { ReactComponent as EmailIcon } from "./assets/email.svg";
+import { ReactComponent as ResumeIcon } from "../../assets/resume.svg";
+import { ReactComponent as GithubIcon } from "../../assets/github.svg";
+import { ReactComponent as LinkedinIcon } from "../../assets/linkedin.svg";
+import { ReactComponent as EmailIcon } from "../../assets/email.svg";
 
 function Socials() {
   const handleDownloadResume = () => {
