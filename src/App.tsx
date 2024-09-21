@@ -7,6 +7,7 @@ import Experience from "./components/Experience/Experience";
 import Socials from "./components/Socials/Socials";
 import { ReactComponent as SunIcon } from "./assets/sun.svg";
 import { ReactComponent as MoonIcon } from "./assets/moon.svg";
+import Credits from "./components/Credits/Credits";
 
 function App() {
   const [isDark, setIsDark] = useState(
@@ -32,6 +33,7 @@ function App() {
         <MoonIcon className={iconClasses} onClick={iconClickHandler} />
       )}
       <div className="flex max-w-5xl md:gap-20 m-auto px-10 sm:px-20 flex-col md:flex-row">
+        {/* Left column */}
         <div className="flex flex-col justify-between w-full pt-20 md:w-5/12 md:sticky md:top-0 md:pb-20 md:max-h-screen">
           {/* <AppBar isDark={isDark} setIsDark={setIsDark} /> */}
           <div>
@@ -43,6 +45,8 @@ function App() {
           </div>
           <Socials />
         </div>
+
+        {/* Right column */}
         <div className="flex flex-col py-20 w-full md:w-7/12 gap-24">
           <div id="about">
             <About />
@@ -53,6 +57,7 @@ function App() {
           {/* <div id="interview me">
             <Interview />
           </div> */}
+          <Credits />
         </div>
       </div>
     </div>
