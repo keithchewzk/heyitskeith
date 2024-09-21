@@ -9,17 +9,21 @@ import { ReactComponent as SunIcon } from "./assets/sun.svg";
 import { ReactComponent as MoonIcon } from "./assets/moon.svg";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(
+    localStorage.getItem("isDark") === "true" ? true : false
+  );
   const iconClasses =
-    "absolute right-6 top-4 w-6 cursor-pointer transform transition-transform duration-200 ease-in-out hover:scale-110 opacity-75 hover:opacity-100";
+    "absolute right-6 top-4 w-6 cursor-pointer transform transition-transform duration-200 ease-in-out hover:scale-110 hover:opacity-100";
   const iconClickHandler = () => {
-    setIsDark(!isDark);
+    const newIsDarkValue = !isDark;
+    setIsDark(newIsDarkValue);
+    localStorage.setItem("isDark", newIsDarkValue.toString());
   };
   // const [selectedSection, setSelectedSection] = useState("About");
 
   return (
     <div
-      className="bg-background-primary"
+      className="bg-background-primary transition-colors"
       data-theme={isDark ? "dark" : "light"}
     >
       {isDark ? (
