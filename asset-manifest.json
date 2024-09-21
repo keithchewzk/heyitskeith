@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/heyitskeith/static/css/main.a9d26b50.css",
+    "main.css": "/heyitskeith/static/css/main.ecd1ebce.css",
     "main.js": "/heyitskeith/static/js/main.1a71e884.js",
     "static/media/JetBrainsMono-VariableFont_wght.ttf": "/heyitskeith/static/media/JetBrainsMono-VariableFont_wght.d08f929cab66fc19b568.ttf",
     "static/media/LeagueSpartan-VariableFont_wght.ttf": "/heyitskeith/static/media/LeagueSpartan-VariableFont_wght.373d611ec44856608b96.ttf",
@@ -11,11 +11,11 @@
     "static/media/resume.svg": "/heyitskeith/static/media/resume.293eca0835155f87e93303f02a387463.svg",
     "static/media/moon.svg": "/heyitskeith/static/media/moon.ec18bf604022c85ff86b8f3f1908729a.svg",
     "index.html": "/heyitskeith/index.html",
-    "main.a9d26b50.css.map": "/heyitskeith/static/css/main.a9d26b50.css.map",
+    "main.ecd1ebce.css.map": "/heyitskeith/static/css/main.ecd1ebce.css.map",
     "main.1a71e884.js.map": "/heyitskeith/static/js/main.1a71e884.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9d26b50.css",
+    "static/css/main.ecd1ebce.css",
     "static/js/main.1a71e884.js"
   ]
 }
