@@ -3,7 +3,8 @@ export const JOBS = [
     id: "0",
     role: "Undergraduate",
     company: "NUS",
-    description: "Bachelor's degree in Computational Biology",
+    description:
+      "I pursued a Bachelor's degree in Computational Biology, studying a mix of biology and computer science modules. I realized I enjoyed building software more than scientific research, which led me to where I am now in tech. ",
     additionalDescription: undefined,
     dateRange: "Aug 2019 - May 2023",
     skills: [
