@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Conversation from "./Conversation";
 import MessageInput from "./MessageInput";
 import { systemPrompt } from "./constants";
+import AIInterviewee from "ai-interviewee";
+
 interface Message {
   assistant?: string;
   user?: string;
