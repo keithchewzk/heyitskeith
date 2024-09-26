@@ -25,7 +25,7 @@ function Conversation({ conversation }: Props) {
         <div className="flex justify-center items-center h-full">
           <img
             className="h-16 w-16"
-            src={require("./headshot.svg").default}
+            src={require("assets/headshot.svg").default}
             alt="Arrow pointing upwads"
           />
         </div>
@@ -44,7 +44,7 @@ function Conversation({ conversation }: Props) {
                 {role === "assistant" && (
                   <img
                     className="h-10 w-10 pr-3"
-                    src={require("./headshot.svg").default}
+                    src={require("assets/headshot.svg").default}
                     alt="Arrow pointing upwads"
                   />
                 )}
