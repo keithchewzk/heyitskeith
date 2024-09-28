@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Hero from "./components/Hero/Hero";
-// import Interview from "./components/Interview/Interview";
+import Interview from "./components/Interview/Interview";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 // import Navigator from "./components/Navigator/Navigator";
 import Socials from "./components/Socials/Socials";
-import { ReactComponent as SunIcon } from "./assets/sun.svg";
-import { ReactComponent as MoonIcon } from "./assets/moon.svg";
+import { ReactComponent as SunIcon } from "assets/sun.svg";
+import { ReactComponent as MoonIcon } from "assets/moon.svg";
 import Credits from "./components/Credits/Credits";
 
 function App() {
@@ -54,9 +54,9 @@ function App() {
           <div id="experience">
             <Experience />
           </div>
-          {/* <div id="interview me">
+          <div id="interview me">
             <Interview />
-          </div> */}
+          </div>
           <Credits />
         </div>
       </div>
