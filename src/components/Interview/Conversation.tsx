@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
 interface Message {
-  assistant?: string;
-  user?: string;
+  role: string;
+  content: string;
 }
 
 interface Props {
@@ -31,9 +31,9 @@ function Conversation({ conversation }: Props) {
         </div>
       ) : (
         <div className="flex flex-col gap-9">
-          {conversation.map((messageItem: Message, index) => {
-            const role = Object.keys(messageItem)[0];
-            const message = Object.values(messageItem)[0];
+          {conversation.map((message: Message, index) => {
+            const role = message.role;
+            const content = message.content;
             return (
               <div
                 key={index}
@@ -55,7 +55,7 @@ function Conversation({ conversation }: Props) {
                       : "flex flex-col justify-center"
                   }
                 >
-                  <ReactMarkdown>{message}</ReactMarkdown>
+                  <ReactMarkdown>{content}</ReactMarkdown>
                 </div>
               </div>
             );

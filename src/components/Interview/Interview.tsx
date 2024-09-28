@@ -5,46 +5,46 @@ import { systemPrompt } from "./constants";
 import AIInterviewee from "ai-interviewee";
 
 interface Message {
-  assistant?: string;
-  user?: string;
+  role: string;
+  content: string;
 }
 
 function Interview() {
   const [conversation, setConversation] = useState<Message[]>([
-    { assistant: "Hey! It's Keith. You can interview me here." },
+    { role: "assistant", content: "Hi I'm Keith, you can interview me here." },
   ]);
   const [isResponding, setIsResponding] = useState(false);
 
-  async function callGptApi(userPrompt: string) {
-    setIsResponding(true);
-    await fetch(
-      "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/agent",
-      {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          systemPrompt: systemPrompt,
-          userPrompt: userPrompt,
-        }),
-      }
-    )
-      .then((response) => response.json())
-      .then((responseData) => {
-        if (responseData.statusCode === 200) {
-          addToConversation({ assistant: responseData.assistantResponse });
-        }
-      });
-    setIsResponding(false);
-  }
+  // async function callGptApi(userPrompt: string) {
+  //   setIsResponding(true);
+  //   await fetch(
+  //     "https://kxaci7u1qe.execute-api.ap-southeast-1.amazonaws.com/prod/agent",
+  //     {
+  //       method: "POST",
+  //       headers: {
+  //         Accept: "application/json",
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         systemPrompt: systemPrompt,
+  //         userPrompt: userPrompt,
+  //       }),
+  //     }
+  //   )
+  //     .then((response) => response.json())
+  //     .then((responseData) => {
+  //       if (responseData.statusCode === 200) {
+  //         addToConversation({ assistant: responseData.assistantResponse });
+  //       }
+  //     });
+  //   setIsResponding(false);
+  // }
 
   function addToConversation(message: Message) {
     setConversation((conversation) => [...conversation, message]);
-    if (message.user) {
-      callGptApi(message.user);
-    }
+    // if (message.user) {
+    //   callGptApi(message.user);
+    // }
   }
 
   return (
