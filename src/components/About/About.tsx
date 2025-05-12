@@ -1,11 +1,10 @@
 import React from "react";
-import { aboutMeParaOne, aboutMeParaTwo } from "./constants";
+import { aboutMeParaOne } from "./constants";
 
 function About() {
   return (
     <div className="opacity-0 animate-fade-in">
-      <p className="mb-5 text-text-muted">{aboutMeParaOne}</p>
-      <p className="text-text-muted">{aboutMeParaTwo}</p>
+      <p className="text-xl text-text-muted">{aboutMeParaOne}</p>
     </div>
   );
 }

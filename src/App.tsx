@@ -47,7 +47,7 @@ function App() {
         </div>
 
         {/* Right column */}
-        <div className="flex flex-col py-20 w-full md:w-7/12 gap-24">
+        <div className="flex flex-col py-20 w-full md:w-7/12 gap-16">
           <div id="about">
             <About />
           </div>

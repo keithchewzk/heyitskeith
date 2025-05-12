@@ -26,7 +26,7 @@ function Job({
         <p className="text-2xl font-medium">{role}</p>
         <p className="text-xl mb-3">{company}</p>
         <div className="mb-3 -m-2 p-2">
-          <p className="text-md text-text-muted mb-2">{description}</p>
+          <p className="text-lg text-text-muted mb-2">{description}</p>
           <div>
             {additionalDescription &&
               additionalDescription.map((desc, index) => (
