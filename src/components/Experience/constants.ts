@@ -30,7 +30,7 @@ export const JOBS = [
     role: "Software Engineer",
     company: "MSD",
     description:
-      "Contributed to two enterprise products, including full-stack development of an enterprise short link management tool and mobile frontend development for a leadership skills app, with additional involvement in product discovery.",
+      "Contributed to two enterprise products, including full-stack development of a short link management tool and mobile frontend development for a leadership skills app, with additional involvement in product discovery.",
     dateRange: "Jan 2024 - Jun 2024",
     skills: [
       "AWS",
