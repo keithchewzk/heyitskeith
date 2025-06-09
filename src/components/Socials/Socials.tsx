@@ -22,11 +22,11 @@ function Socials() {
   };
 
   const icons = [
-    {
-      Component: ResumeIcon,
-      key: "resume",
-      onClickHandler: handleDownloadResume,
-    },
+    // {
+    //     Component: ResumeIcon,
+    //     key: "resume",
+    //   onClickHandler: handleDownloadResume,
+    // },
     {
       Component: EmailIcon,
       key: "email",
