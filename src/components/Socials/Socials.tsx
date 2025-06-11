@@ -1,17 +1,17 @@
-import { ReactComponent as ResumeIcon } from "../../assets/resume.svg";
+// import { ReactComponent as ResumeIcon } from "../../assets/resume.svg";
 import { ReactComponent as GithubIcon } from "../../assets/github.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/linkedin.svg";
 import { ReactComponent as EmailIcon } from "../../assets/email.svg";
 
 function Socials() {
-  const handleDownloadResume = () => {
-    const link = document.createElement("a");
-    link.href = `${process.env.PUBLIC_URL}/files/keith_chew_resume.pdf`; // Path to the PDF in the public folder
-    link.download = "keith_chew_resume.pdf"; // Name of the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link); // Clean up the link
-  };
+  // const handleDownloadResume = () => {
+  //   const link = document.createElement("a");
+  //   link.href = `${process.env.PUBLIC_URL}/files/keith_chew_resume.pdf`; // Path to the PDF in the public folder
+  //   link.download = "keith_chew_resume.pdf"; // Name of the downloaded file
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link); // Clean up the link
+  // };
 
   const handleEmail = () => {
     window.location.href = "mailto:keithchewzk@gmail.com";
