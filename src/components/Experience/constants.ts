@@ -22,7 +22,7 @@ export const JOBS = [
     company: "MSD",
     description:
       "Designed and implemented cloud automation solutions to improve cost visibility, optimize resource usage, and enhance accountability across company applications.",
-    dateRange: "Jul 2023 - Dec 2024",
+    dateRange: "Jul 2023 - Dec 2023",
     skills: ["AWS", "Cloud Architecture", "SQL", "Terraform"],
   },
   {
@@ -31,7 +31,7 @@ export const JOBS = [
     company: "MSD",
     description:
       "Contributed across multiple cross-functional teams to build and scale enterprise-grade products in the web, mobile, and AI domains. This includes full-stack development of a short link management tool, mobile frontend for a leadership development app, and backend engineering for an LLM assistant platform.",
-    dateRange: "Jan 2024 - Jun 2024",
+    dateRange: "Jan 2024 - Present",
     skills: [
       "AWS",
       "CI/CD",
