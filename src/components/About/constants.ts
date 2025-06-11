@@ -1,2 +1,2 @@
 export const aboutMeParaOne =
-  "Early-career professional with experience in AI, Software and Cloud Engineering through MSD's rotation programme. Focused on building strong technical foundations, with a drive for continuous learning and growth in the tech space.";
+  "Early-career software engineer with experience across web, AI, and cloud domains through MSD’s rotation programme. Driven by continuous learning and building robust technical foundations in scalable, impactful systems.";

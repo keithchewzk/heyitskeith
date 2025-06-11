@@ -21,7 +21,7 @@ export const JOBS = [
     role: "Cloud Engineer",
     company: "MSD",
     description:
-      "Enhanced cost visibility and accountability of company applications through development of cloud-based automations.",
+      "Designed and implemented cloud automation solutions to improve cost visibility, optimize resource usage, and enhance accountability across company applications.",
     dateRange: "Jul 2023 - Dec 2024",
     skills: ["AWS", "Cloud Architecture", "SQL", "Terraform"],
   },
@@ -30,23 +30,8 @@ export const JOBS = [
     role: "Software Engineer",
     company: "MSD",
     description:
-      "Contributed to two enterprise products, including full-stack development of a short link management tool and mobile frontend development for a leadership skills app, with additional involvement in product discovery.",
+      "Contributed across multiple cross-functional teams to build and scale enterprise-grade products in the web, mobile, and AI domains. This includes full-stack development of a short link management tool, mobile frontend for a leadership development app, and backend engineering for an LLM assistant platform.",
     dateRange: "Jan 2024 - Jun 2024",
-    skills: [
-      "AWS",
-      "Next.js",
-      "Product Discovery",
-      "React Native",
-      "TypeScript",
-    ],
-  },
-  {
-    id: "3",
-    role: "AI Engineer",
-    company: "MSD",
-    description:
-      "Developed backend features for an enterprise GenAI chat app, including a RAG system, LLM tool call orchestration, and CI/CD pipelines with automated testing, security scanning and EKS deployment.",
-    dateRange: "Jul 2024 - Present",
     skills: [
       "AWS",
       "CI/CD",
@@ -55,10 +40,13 @@ export const JOBS = [
       "GitHub Actions",
       "Kubernetes",
       "LLMs",
+      "NextJS",
       "PostgreSQL",
       "Prompt Engineering",
       "Python",
       "RAG",
+      "React Native",
+      "TypeScript",
     ],
   },
 ];
