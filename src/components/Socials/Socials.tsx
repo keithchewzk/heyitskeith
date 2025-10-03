@@ -35,7 +35,7 @@ function Socials() {
     {
       Component: GithubIcon,
       key: "github",
-      onClickHandler: () => handleLinkRedirect("https://github.com/kippsss"),
+      onClickHandler: () => handleLinkRedirect("https://github.com/keithchewzk"),
     },
     {
       Component: LinkedinIcon,
